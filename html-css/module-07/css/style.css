@@ -1,0 +1,209 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 933px;
+    min-height: 50px;
+    margin: auto;
+}
+.main-nav{
+    min-height: 50px;    
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.site-logo{
+    font-size: 26px;
+    font-weight: 400px;
+    line-height: 41px;
+    letter-spacing: 1.3px;
+    color: #fed136;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+}
+.nav-list{
+    padding: 0;
+    vertical-align: top;
+    min-height: 50px;
+    margin: 0;
+}
+.nav-list-item{
+    display: inline;
+    margin-left: 20px;
+}
+.nav-list-item a{
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 41px;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-menu-item:hover{
+    color: #fed136;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+}
+.srvices{
+    width: 934px;
+    min-height: 330px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: #222222;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -1;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.services-subtext{
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    color: #777777;
+}
+.services-list{
+    width: 934px;
+    min-height: 330px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: auto;  
+    padding: 0; 
+}
+.services-list-item{
+    width: 274px;
+    min-height: 184px;
+}
+.services-list-item a{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -0.45;
+    color: #222222;
+    text-decoration: none;
+    display: block;
+}
+.img-wrapper{
+    width: 68px;
+    min-height: 67px;
+    border-radius: 60px;
+    border: 5px solid #fed136;
+    display: flex;
+    margin: auto;
+}
+.services-list-item img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.services-list-item a::before:nth-child(1){
+    background-image: url(basket.png);
+}
+.services-list-item p{
+    text-align: center;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35;
+    font-family: 'Roboto Slab', serif;
+}
+.contacts{
+    width: 1400px;
+    min-height: 676px;
+    background-image: url(map-image.png);
+    background-position-x: 40px;
+    background-color: black;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: auto;
+    padding-top: 1px;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin-top: 110px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contacts-subtext{
+    color: #777777;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 115px;
+    margin-top: 0;
+}
+.user-contacts{
+    min-height: 330px;
+    width: 950px;
+    margin: auto;
+}
+.contacts-wrapper{
+    width: 455px;
+    min-height: 210px;
+    display: inline-block;
+    padding: 0;
+}
+.name{
+    width: 455px;
+    min-height: 50px;
+    border: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.user-contacts input[type='name']:valid{
+    outline: 3px solid green;
+}
+.mail{
+    width: 455px;
+    min-height: 50px;
+    border: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.user-contacts input[type='email']:valid{
+    outline: 3px solid green;
+}
+.subject{
+    width: 455px;
+    min-height: 50px;
+    border: none; 
+    padding: 0;   
+}
+.message{
+    display: inline-block;
+    width: 455px;
+    min-height: 210px;
+    vertical-align: top;
+    margin-left: 30px;
+}
+.user-contacts input[type='text']:valid{
+    outline: 3px solid green;
+}
+.send{
+    width: 240px;
+    height: 66px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #fed136;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
