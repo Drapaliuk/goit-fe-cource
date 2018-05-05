@@ -88,7 +88,7 @@ main {
     width: 104px;
     height: 104px;
     background-color: #4ec6ab;
-    background-image: url(left.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/left.png);
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.65;
@@ -103,7 +103,7 @@ main {
     width: 104px;
     height: 104px;
     background-color: #4ec6ab;
-    background-image: url(right.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/right.png);
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.65;
@@ -146,7 +146,6 @@ main {
     letter-spacing: -1.2px;
     margin-top: 10px;
 }
-
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -155,7 +154,6 @@ h1 {
     text-align: center;
     font-family: sans-serif;
 }
-
 h1::after {
     content: "";
     display: block;
