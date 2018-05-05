@@ -21,7 +21,6 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
 .nav-menu {
     list-style: none;
 }
@@ -97,7 +96,7 @@ h1::after {
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(alarm.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/alarm.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -108,7 +107,7 @@ h1::after {
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(line-graph.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/line-graph.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -119,7 +118,7 @@ h1::after {
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(computer.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/computer.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -130,7 +129,7 @@ h1::after {
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(book.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/book.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -141,7 +140,7 @@ h1::after {
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(home.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/home.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -152,7 +151,7 @@ h1::after {
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(image.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/image.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -245,25 +244,25 @@ h1::after {
 }
 
 .social-button:nth-child(1) {
-    background-image: url(facebook.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/facebook.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .social-button:nth-child(2) {
-    background-image: url(twitter.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/twitter.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .social-button:nth-child(3) {
-    background-image: url(pinterest.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/pinterest.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .social-button:nth-child(4) {
-    background-image: url(instagram.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/instagram.png);
     background-repeat: no-repeat;
     background-position: center;
 }
