@@ -64,12 +64,14 @@ h1{
     text-transform: uppercase;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 70px;
 }
 .services-subtext{
     text-align: center;
     font-style: italic;
     font-size: 16px;
     color: #777777;
+    margin-bottom: 70px;
 }
 .services-list{
     width: 934px;
@@ -107,9 +109,6 @@ h1{
     max-height: 100%;
     margin: auto;
 }
-.services-list-item a::before:nth-child(1){
-    background-image: url(basket.png);
-}
 .services-list-item p{
     text-align: center;
     color: #777777;
@@ -121,7 +120,7 @@ h1{
 .contacts{
     width: 1400px;
     min-height: 676px;
-    background-image: url(map-image.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-07/img7/map-image.png);
     background-position-x: 40px;
     background-color: black;
     background-size: 80%;
