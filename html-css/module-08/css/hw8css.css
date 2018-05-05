@@ -37,13 +37,13 @@ body {
         font-weight: 700;
         border: none;
         outline: none;
-        cursor: pointer;
     }
     .log-in:hover {
         border: 2px solid #ffffff;
         background-color: transparent;
         border: 2px solid #ffffff;
         border-radius: 13px;
+        cursor: pointer;
     }
     .sign-up {
         width: 90px;
@@ -54,11 +54,12 @@ body {
         font-weight: 700;
         border: none;
         outline: none;
-        cursor: pointer;
+
     }
     .sign-up:hover {
         border: 2px solid #ffffff;
         border-radius: 13px;
+        cursor: pointer;
     }
     .site-logo {
         color: #ffffff;
