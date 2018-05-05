@@ -1,0 +1,343 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 320px) {
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    header {
+        width: 320px;
+        height: 540px;
+        background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/header-mobile.png);
+        background-color: black;
+        position: relative;
+        margin: auto;
+    }
+    nav {
+        background: transparent;
+        width: 320px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .reg-wrapper {
+        justify-content: flex-end;
+    }
+    .log-in {
+        width: 90px;
+        height: 36px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+    }
+    .log-in:hover {
+        border: 2px solid #ffffff;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 13px;
+    }
+    .sign-up {
+        width: 90px;
+        height: 36px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+    }
+    .sign-up:hover {
+        border: 2px solid #ffffff;
+        border-radius: 13px;
+    }
+    .site-logo {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .under-title {
+        text-align: center;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .find-partner {
+        background-color: #ff4e50;
+        border-radius: 20px;
+        width: 280px;
+        height: 40px;
+        display: block;
+        margin: auto;
+        border: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        color: #ffffff;
+        outline: none;
+    }
+    main {
+        width: 320px;
+        height: min-content;
+        margin: auto;
+    }
+    .partner-section {
+        width: 320px;
+        height: min-content;
+    }
+    h2 {
+        text-align: center;
+        color: #333333;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .partner-list {
+        width: 280px;
+        min-height: min-content;
+        list-style: none;
+        margin: auto;
+        padding: 0;
+    }
+    .img-container {
+        width: 280px;
+        min-height: min-content;
+        padding: 0;
+        margin: auto;
+        position: relative;
+    }
+    .partner-list-item img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .icon {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        border-radius: 22px;
+        border: 4px solid #ffffff;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 75%;
+        right: 28%;
+    }
+    .bredlay {
+        background-image: url(iconpartner1.png);
+        background-color: #ff4e50;
+    }
+    .lucas {
+        background-image: url(iconpartner2.png);
+        background-color: #ffa507;
+    }
+    .heather{
+        background-image: url(iconpartner3.png);
+        background-color: #1cd7ad;
+    }
+    .bredlay2 {
+        background-image: url(iconpartner4.png);
+        background-color: #4e73db;
+    }
+    .partner-list-item h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        color: #333333;
+        font-family: Montserrat;
+    }
+    .partner-list-item p {
+        text-align: center;
+        font-size: 14px;
+        color: #666666;
+        font-weight: 300;
+        font-family: Roboto;
+    }
+    .partners-button {
+        margin: auto;
+        width: 280px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        border: 2px solid #ff4e50;
+        color: #ff4e50;
+        font-weight: 700;
+        font-size: 14px;
+        font-family: Montserrat;
+        padding: 0;
+        display: block;
+        margin-bottom: 100px;
+        outline: none;
+    }
+}
+@media (min-width: 768px) {
+    header {
+        width: 768px;
+        height: 700px;
+        background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/header-tablet.png);
+        margin-bottom: 72px;
+    }
+    nav {
+        background: transparent;
+        width: 669px;
+        min-height: 36px;
+        display: flex;
+        flex-direction: row;
+        justify-items: space-between;
+        margin: auto;
+        margin-bottom: 172px;
+    }
+    .log-in {
+        width: 90px;
+        height: 36px;
+    }
+    .log-in:hover {
+        border: 2px solid #ffffff;
+        border-radius: 13px;
+    }
+    .sign-up {
+        width: 90px;
+        height: 36px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .under-title {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .find-partner {
+        width: 226px;
+        height: 40px;
+    }
+    main {
+        width: 768px;
+        height: 600px;
+        margin: auto;
+    }
+    .partner-section {
+        width: 768px;
+        height: min-content;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .partner-list {
+        width: 470px;
+        min-height: 625;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .partner-list-item {
+        display: inline-block;
+        width: 194px;
+        min-height: 206px;
+    }
+    .img-container {
+        width: 194px;
+        min-height: min-content;
+    }
+    .icon {
+        right: 20%;
+    }
+    .partner-list-item h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .partner-list-item p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .partners-button {
+        width: 280px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid #ff4e50;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        width: 1440px;
+        height: 700px;
+        background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/vector-smart-object.png);
+        margin-bottom: 72px;
+    }
+    nav {
+        width: 939px;
+        min-height: 36px;
+    }
+    .log-in {
+        background-color: transparent;
+        font-size: 14px;
+    }
+    .sign-up {
+        font-size: 14px;
+        background-color: transparent;
+    }
+    h1 {
+        margin-top: 190px;
+        font-size: 52px;
+    }
+    .find-partner {
+        width: 225px;
+        height: 40px;
+    }
+    main {
+        width: 1440px;
+        min-height: 1210px;
+        margin: auto;
+    }
+    .partner-section {
+        width: 1440px;
+        height: min-content;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .partner-list {
+        width: 914px;
+        min-height: 367px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .partner-list-item {
+        width: 217px;
+        min-height: 235px;
+    }
+    .partners-button {
+        width: 192px;
+        height: 40px;
+    }
+}
