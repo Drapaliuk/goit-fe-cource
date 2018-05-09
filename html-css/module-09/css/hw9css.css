@@ -1,0 +1,29 @@
+.up .container .row>[class*=col-7] {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.up .container .row .col-7>button {
+    width: 200px;
+    height: 25px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.col-12 {
+    text-align: center;
+}
+.partner-item .container .row > [class*="col-"]:not(nth-last-child(-n + 2)){
+        margin-bottom: 30px;
+    }
+}
+.col-12 .row > [class*="col-4"]:nth-child(3){
+    background: rgb(87, 68, 156);
+}
