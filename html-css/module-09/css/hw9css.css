@@ -1,15 +1,6 @@
-.up .container .row>[class*=col-7] {
-    text-align: center;
-}
-
 h1 {
-    font-size: 1rem;
     margin-top: 30px;
-}
-
-.up .container .row .col-7>button {
-    width: 200px;
-    height: 25px;
+    margin-top: 30px;
 }
 
 h2 {
@@ -17,13 +8,33 @@ h2 {
     margin-bottom: 40px;
 }
 
+.header .container .row>[class*=col-] {
+    text-align: center;
+}
+
+.main .container .row .col-12>button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.header .container .row .col-7>button {
+    width: 200px;
+    height: 25px;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
 .col-12 {
     text-align: center;
 }
-.partner-item .container .row > [class*="col-"]:not(nth-last-child(-n + 2)){
-        margin-bottom: 30px;
-    }
-}
-.col-12 .row > [class*="col-4"]:nth-child(3){
-    background: rgb(87, 68, 156);
+
+.header .container .row .col-12>button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 30px;
 }
