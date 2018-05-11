@@ -1,0 +1,97 @@
+.team__first-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+}
+.team__title {
+    text-align: center;
+    font-size: 30px;
+}
+.team__about-team {
+    width: 941px;
+    height: 39px;
+    font-size: 15px;
+    color: #999999;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.team__about-team::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.team-list {
+    width: 1575px;
+    min-height: 869px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+}
+.team-list__item {
+    position: relative;
+}
+
+.team-list__hover {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 380px;
+    min-height: 470px;
+    background-color: transparent;
+    top: 1px;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-property: box shadow;
+    -o-transition-property: box shadow;
+    transition-property: box shadow;
+    -webkit-transition-duration: 5s;
+         -o-transition-duration: 5s;
+            transition-duration: 5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+}
+.team-list__name{
+    text-align: center;
+    color: #333333;    
+}
+.team-list__position {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+    text-align: center;
+}
+
+.team-list__hover:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ed8889), to(#f4ad8e));
+    background-image: -webkit-linear-gradient(#ed8889, #f4ad8e);
+    background-image: -o-linear-gradient(#ed8889, #f4ad8e);
+    background-image: linear-gradient(#ed8889, #f4ad8e);
+    -webkit-box-shadow: 20px 20px #95E1D3;
+            box-shadow: 20px 20px #95E1D3;
+    opacity: 0.85;
+}

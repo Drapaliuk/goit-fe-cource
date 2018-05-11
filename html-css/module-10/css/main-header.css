@@ -1,0 +1,39 @@
+.main-header {
+    width: 1900px;
+    min-height: 1000px;
+    margin: auto;
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/module-10/img/eagle.jpg);
+}
+
+.main-header__text {
+    color: #ffffff;
+    font-family: "Kaushan Script";
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-header__title {
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+}
+
+.main-header__button {
+    display: block;
+    width: 160px;
+    min-height: 40px;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 70px;
+    outline: none;
+}
