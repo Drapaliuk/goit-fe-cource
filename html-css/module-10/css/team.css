@@ -1,3 +1,8 @@
+.team{
+    width: 1900px;
+    min-height: 900px;
+    margin: auto;
+}
 .team__first-text {
     text-align: center;
     font-weight: 400;
