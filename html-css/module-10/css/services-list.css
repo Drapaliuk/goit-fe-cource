@@ -47,25 +47,25 @@
 }
 
 .services-list--photography::before {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/module-10/icon/alarm.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/icon/alarm.png);
 }
 
 .services-list--web-design::before {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/module-10/icon/graph.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/icon/graph.png);
 }
 
 .services-list--creativity::before {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/module-10/icon/computer.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/icon/computer.png);
 }
 
 .services-list--seo::before {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/module-10/icon/book.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/icon/book.png);
 }
 
 .services-list--csshtml::before {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/module-10/icon/home.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/icon/home.png);
 }
 
 .services-list--digital::before {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/module-10/icon/image.png);
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/icon/image.png);
 }
