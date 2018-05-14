@@ -198,8 +198,9 @@ h1::after {
 
 .team-list {
     width: max-content;
-    height: 869px;
+    min-height: min-content;
     margin: auto;
+    margin-bottom: 200px;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -219,23 +220,8 @@ h1::after {
 .team-list-item {
     position: relative;
 
-}
 
-/* .hover {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 380px;
-    height: 470px;
-    background-color: transparent;
-    top: 1px;
-    transition-property: background-image;
-    transition-property: box-shadow;
-    transition-property: transform;   
-    transition-duration: 5s;
-    animation-delay: 2s;
-} */
+}
 .team-list-img{
     transition-property: background-image;
     transition-property: box-shadow;
@@ -245,10 +231,9 @@ h1::after {
 
 }
 .team-list-img:hover {
-    background-image: linear-gradient(#ed8889, #f4ad8e);
+    background: linear-gradient(#ed8889, #f4ad8e);
     box-shadow: 10px 10px #95E1D3;
     transform: translate(-10px, -10px);
-    opacity: 0.3;
 }
 .team-list-img:hover ~ button {
     display: block;
@@ -259,9 +244,6 @@ h1::after {
     margin-right: 4px;
     border: none;
 }
-.cover{
-    background-color: red;
-}
 
 .social-button {
     display: none;
@@ -271,18 +253,13 @@ h1::after {
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 .social-button:hover {
-    background-color: #95e1D3;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    background-color: #95e1D3;}
 
 .facebook {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/facebook.png);
-
     left: 70px;
 }
 
@@ -301,15 +278,6 @@ h1::after {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/instagram.png);
     left: 253px;
 }
-/* .hover:hover>.social-button {
-    display: block;
-    width: 56px;
-    height: 56px;
-    display: inline;
-    background-color: #fce38a;
-    margin-right: 4px;
-    border: none;
-} */
 
 .team-list-item>h4,
 p {
@@ -318,7 +286,7 @@ p {
 
 footer {
     width: 1200px;
-    height: 51px;
+    min-height: 51px;
     margin: auto;
     display: flex;
     padding-left: 10px;
