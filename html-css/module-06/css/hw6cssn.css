@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
 .nav-menu {
     list-style: none;
     padding-left: 0;
@@ -35,7 +36,8 @@ header {
     text-transform: uppercase;
     transition: all .2s linear;
 }
-.nav-menu-item:last-child{
+
+.nav-menu-item:last-child {
     margin-right: 0;
 }
 
@@ -99,70 +101,39 @@ h1::after {
     color: #333333
 }
 
-.photography::before {
+.services-list-link::before {
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/alarm.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
     margin-right: 40px;
+}
+
+.photography::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/alarm.png);
 }
 
 .design::before {
-    content: "";
-    width: 40px;
-    height: 40px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/line-graph.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-right: 40px;
 }
 
 .creativity::before {
-    content: "";
-    width: 40px;
-    height: 40px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/computer.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-right: 40px;
 }
 
 .seo::before {
-    content: "";
-    width: 40px;
-    height: 40px;
+
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/book.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-right: 40px;
 }
 
 .css::before {
-    content: "";
-    width: 40px;
-    height: 40px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/home.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-right: 40px;
 }
 
 .digital::before {
-    content: "";
-    width: 40px;
-    height: 40px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-right: 40px;
 }
 
 .about-team {
@@ -222,23 +193,23 @@ h1::after {
 
 .team-list-item {
     position: relative;
-
-
 }
-.team-list-img{
+
+.team-list-img {
     transition-property: background-image;
     transition-property: box-shadow;
-    transition-property: transform;   
+    transition-property: transform;
     transition-duration: 1s;
     animation-delay: 1s;
-
 }
+
 .team-list-img:hover {
     background: linear-gradient(#ed8889, #f4ad8e);
     box-shadow: 10px 10px #95E1D3;
     transform: translate(-10px, -10px);
 }
-.team-list-img:hover ~ button {
+
+.team-list-img:hover~button {
     display: block;
     width: 56px;
     height: 56px;
@@ -259,7 +230,8 @@ h1::after {
 }
 
 .social-button:hover {
-    background-color: #95e1D3;}
+    background-color: #95e1D3;
+}
 
 .facebook {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/facebook.png);
@@ -271,10 +243,9 @@ h1::after {
     left: 131px;
 }
 
-.pinterest{
+.pinterest {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/pinterest.png);
     left: 192px;
-
 }
 
 .instagram {
@@ -293,7 +264,7 @@ footer {
     margin: auto;
     display: flex;
     padding-left: 10px;
-    padding-right: 10px;    
+    padding-right: 10px;
     justify-content: space-between;
     align-items: flex-end;
     border-top: 1px solid #e7e7e7;
