@@ -26,13 +26,15 @@ header {
     list-style: none;
     padding-left: 0;
 }
-
-.nav-menu-item {
+.nav-menu-item{
     display: inline-block;
+    margin-right: 50px;
+
+}
+.nav-menu-item a {
     color: #95E1D3;
     text-decoration: none;
     font-size: 14px;
-    margin-right: 50px;
     text-transform: uppercase;
     transition: all .2s linear;
 }
@@ -193,8 +195,11 @@ h1::after {
 
 .team-list-item {
     position: relative;
-}
 
+}
+.team-list-item:not(:last-child){
+    margin-right: 30px;
+}
 .team-list-img {
     transition-property: background-image;
     transition-property: box-shadow;
