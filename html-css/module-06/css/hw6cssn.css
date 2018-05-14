@@ -6,7 +6,7 @@ body {
 
 header {
     width: 1200px;
-    height: 37px;
+    min-height: 37px;
     margin: auto;
 }
 
@@ -23,6 +23,7 @@ header {
 }
 .nav-menu {
     list-style: none;
+    padding-left: 0;
 }
 
 .nav-menu-item {
@@ -32,6 +33,10 @@ header {
     font-size: 14px;
     margin-right: 50px;
     text-transform: uppercase;
+    transition: all .2s linear;
+}
+.nav-menu-item:last-child{
+    margin-right: 0;
 }
 
 .nav-menu-item:hover {
@@ -59,11 +64,13 @@ h1::after {
     height: 3px;
     background-color: #F38181;
     margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .services-list {
-    width: 1148px;
-    height: 419px;
+    width: max-content;
+    min-height: 419px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -190,7 +197,7 @@ h1::after {
 }
 
 .team-list {
-    width: 1575px;
+    width: max-content;
     height: 869px;
     margin: auto;
     display: flex;
@@ -211,9 +218,10 @@ h1::after {
 
 .team-list-item {
     position: relative;
+
 }
 
-.hover {
+/* .hover {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -222,51 +230,27 @@ h1::after {
     height: 470px;
     background-color: transparent;
     top: 1px;
-    transition-property: background-color;
-    transition-property: box shadow;
+    transition-property: background-image;
+    transition-property: box-shadow;
+    transition-property: transform;   
     transition-duration: 5s;
     animation-delay: 2s;
-}
+} */
+.team-list-img{
+    transition-property: background-image;
+    transition-property: box-shadow;
+    transition-property: transform;   
+    transition-duration: 1s;
+    animation-delay: 1s;
 
-.hover:hover {
+}
+.team-list-img:hover {
     background-image: linear-gradient(#ed8889, #f4ad8e);
-    box-shadow: 20px 20px #95E1D3;
-    opacity: 0.85;
+    box-shadow: 10px 10px #95E1D3;
+    transform: translate(-10px, -10px);
+    opacity: 0.3;
 }
-
-.social-button {
-    display: none;
-    outline: none;
-}
-
-.social-button:focus {
-    background-color: #95e1D3;
-}
-
-.social-button:nth-child(1) {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/facebook.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.social-button:nth-child(2) {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/twitter.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.social-button:nth-child(3) {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/pinterest.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.social-button:nth-child(4) {
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/instagram.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.hover:hover>.social-button {
+.team-list-img:hover ~ button {
     display: block;
     width: 56px;
     height: 56px;
@@ -275,6 +259,57 @@ h1::after {
     margin-right: 4px;
     border: none;
 }
+.cover{
+    background-color: red;
+}
+
+.social-button {
+    display: none;
+    outline: none;
+    cursor: pointer;
+    top: 207px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.social-button:hover {
+    background-color: #95e1D3;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.facebook {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/facebook.png);
+
+    left: 70px;
+}
+
+.twitter {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/twitter.png);
+    left: 131px;
+}
+
+.pinterest{
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/pinterest.png);
+    left: 192px;
+
+}
+
+.instagram {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/instagram.png);
+    left: 253px;
+}
+/* .hover:hover>.social-button {
+    display: block;
+    width: 56px;
+    height: 56px;
+    display: inline;
+    background-color: #fce38a;
+    margin-right: 4px;
+    border: none;
+} */
 
 .team-list-item>h4,
 p {
@@ -286,6 +321,8 @@ footer {
     height: 51px;
     margin: auto;
     display: flex;
+    padding-left: 10px;
+    padding-right: 10px;    
     justify-content: space-between;
     align-items: flex-end;
     border-top: 1px solid #e7e7e7;
