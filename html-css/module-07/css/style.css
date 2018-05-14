@@ -12,6 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin: auto;
+    padding: 0;
 }
 .site-logo{
     font-size: 26px;
@@ -25,13 +26,15 @@ header{
 }
 .nav-list{
     padding: 0;
+    margin: 0;   
     vertical-align: top;
     min-height: 50px;
-    margin: 0;
 }
 .nav-list-item{
     display: inline;
-    margin-left: 20px;
+}
+.nav-list-item:not(:last-child){
+    margin-right: 20px;    
 }
 .nav-list-item a{
     color: #222222;
@@ -74,7 +77,7 @@ h1{
     margin-bottom: 70px;
 }
 .services-list{
-    width: 934px;
+    width: 1170px;
     min-height: 330px;
     display: flex;
     justify-content: space-between;
@@ -118,7 +121,7 @@ h1{
     font-family: 'Roboto Slab', serif;
 }
 .contacts{
-    width: 1400px;
+    width: 100%;
     min-height: 676px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-07/img7/map-image.png);
     background-position-x: 40px;
@@ -128,6 +131,11 @@ h1{
     background-position: right;
     margin: auto;
     padding-top: 1px;
+}
+.form-wrapper{
+    min-height: 330px;
+    width: 950px;
+    margin: auto;
 }
 h2{
     text-align: center;
@@ -149,9 +157,7 @@ h2{
     margin-top: 0;
 }
 .user-contacts{
-    min-height: 330px;
-    width: 950px;
-    margin: auto;
+
 }
 .contacts-wrapper{
     width: 455px;
@@ -159,22 +165,17 @@ h2{
     display: inline-block;
     padding: 0;
 }
-.name{
+.user-contacts-item{
     width: 455px;
     min-height: 50px;
     border: none;
-    margin-bottom: 30px;
     padding: 0;
+}
+.user-contacts-item:not(:last-child){
+    margin-bottom: 30px;
 }
 .user-contacts input[type='name']:valid{
     outline: 3px solid green;
-}
-.mail{
-    width: 455px;
-    min-height: 50px;
-    border: none;
-    margin-bottom: 30px;
-    padding: 0;
 }
 .user-contacts input[type='email']:valid{
     outline: 3px solid green;
@@ -187,10 +188,12 @@ h2{
 }
 .message{
     display: inline-block;
-    width: 455px;
+    width: 400px;
     min-height: 210px;
     vertical-align: top;
     margin-left: 30px;
+    padding: 0;
+    border: none;
 }
 .user-contacts input[type='text']:valid{
     outline: 3px solid green;

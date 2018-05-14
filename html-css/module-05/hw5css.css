@@ -43,14 +43,18 @@ img {
 .nav-list {
     float: right;
     list-style: none;
+    padding: 0;
 }
 
 .nav-list-item {
     display: inline-block;
 }
 
-.nav-list-item a {
+.nav-list-item:not(:last-child) {
     margin-right: 20px;
+}
+
+.nav-list-item a {
     color: #0f0101;
     font-size: 14px;
     line-height: 11px;
@@ -84,34 +88,32 @@ main {
     max-width: 100%;
 }
 
-.left-slide {
+.slide {
     width: 104px;
     height: 104px;
-    background-color: #4ec6ab;
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/left.png);
+    background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.65;
+    outline: none;
+    cursor: pointer;
     border: none;
     position: absolute;
     top: 225px;
-    left: 245px;
-    outline: none;
+    opacity: 0.5;
 }
 
-.right-slide {
-    width: 104px;
-    height: 104px;
+.slide:hover {
     background-color: #4ec6ab;
+}
+
+.left {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/left.png);
+    left: 245px;
+}
+
+.right {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/right.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.65;
-    border: none;
-    position: absolute;
-    top: 225px;
     right: 245px;
-    outline: none;
 }
 
 .header-title-container {
@@ -146,6 +148,7 @@ main {
     letter-spacing: -1.2px;
     margin-top: 10px;
 }
+
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -154,6 +157,7 @@ h1 {
     text-align: center;
     font-family: sans-serif;
 }
+
 h1::after {
     content: "";
     display: block;
@@ -301,6 +305,7 @@ h1::after {
     outline: none;
     z-index: 2;
 }
+
 .cart {
     width: 166px;
     height: 50px;
@@ -312,6 +317,7 @@ h1::after {
     outline: none;
     vertical-align: middle;
 }
+
 .cart p {
     height: 20px;
     display: inline-block;
@@ -326,7 +332,8 @@ h1::after {
     box-sizing: border-box;
     padding-top: 3px;
 }
-.cart-image{
+
+.cart-image {
     height: 50px;
     display: inline-block;
     content: "";
@@ -338,6 +345,7 @@ h1::after {
     margin-right: 15px;
     vertical-align: middle;
 }
+
 footer {
     width: 1600px;
     height: 88px;
@@ -349,6 +357,7 @@ footer {
     line-height: 28px;
     display: flex;
 }
+
 footer p {
     margin: auto;
 }
