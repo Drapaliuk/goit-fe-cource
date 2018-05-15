@@ -7,7 +7,6 @@ body {
     body {
         font-family: 'Montserrat', sans-serif;
     }
-    
     header {
         width: 320px;
         height: 540px;
@@ -37,16 +36,24 @@ body {
         font-weight: 700;
         border: none;
         outline: none;
-        transition: all 300ms linear;
+        transition: all 200ms linear;
         border: 2px solid transparent;
         border-radius: 13px;
-        cursor: pointer;      
+        cursor: pointer;
     }
     .log-in:hover {
         border: 2px solid #ffffff;
     }
+    .log-in:active {
+        background-color: #ff4e50;
+        border: 2px solid transparent;
+    }
     .sign-up:hover {
         border: 2px solid #ffffff;
+    }
+    .sign-up:active {
+        background-color: #ff4e50;
+        border: 2px solid transparent;
     }
     .site-logo {
         color: #ffffff;
@@ -55,6 +62,10 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         text-decoration: none;
+        transition: all 300ms linear;
+    }
+    .site-logo:hover {
+        color: #ff4e50
     }
     h1 {
         text-align: center;
@@ -88,13 +99,13 @@ body {
         border: 1px solid transparent;
         transition: all 500ms linear;
     }
-    .find-partner:hover{
+    .find-partner:hover {
         background-color: transparent;
         border: 1px solid #ffffff;
-
     }
-
-    
+    .find-partner:active {
+        background-color: #ff4e50;
+    }
     main {
         width: 320px;
         height: min-content;
@@ -118,7 +129,10 @@ body {
         margin: auto;
         padding: 0;
     }
-    .img-container {
+    .partner-list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    . .img-container {
         width: 280px;
         min-height: min-content;
         padding: 0;
@@ -150,7 +164,7 @@ body {
         background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/iconpartner2.png);
         background-color: #ffa507;
     }
-    .heather{
+    .heather {
         background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/iconpartner3.png);
         background-color: #1cd7ad;
     }
@@ -186,9 +200,21 @@ body {
         padding: 0;
         display: block;
         margin-bottom: 100px;
+        margin-top: 30px;
         outline: none;
+        cursor: pointer;
+        transition: all 200ms linear;
+    }
+    .partners-button:hover{
+        background-color: #ff4e50;
+        color: #ffffff;
+    }
+    .partners-button:active {
+        background-color: #ff4e50;
+        color: #ffffff;
     }
 }
+
 @media (min-width: 768px) {
     header {
         width: 768px;
@@ -261,6 +287,12 @@ body {
         width: 194px;
         min-height: 206px;
     }
+    .partner-list-item:nth-child(odd) {
+        margin-right: 30px;
+    }
+    .partner-list-item:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
     .img-container {
         width: 194px;
         min-height: min-content;
@@ -305,7 +337,6 @@ body {
         background-color: transparent;
     }
     h1 {
-        margin-top: 190px;
         font-size: 52px;
     }
     .find-partner {
@@ -326,7 +357,7 @@ body {
         font-size: 22px;
     }
     .partner-list {
-        width: 914px;
+        width: 100%;
         min-height: 367px;
         display: flex;
         flex-wrap: wrap;
@@ -335,6 +366,13 @@ body {
     .partner-list-item {
         width: 217px;
         min-height: 235px;
+        margin-bottom: 0px;
+    }
+    .partner-list-item:nth-child(n+1){
+        margin-bottom: 0px;
+    }
+    .partner-list-item:not(:last-child){
+        margin-right: 40px;
     }
     .partners-button {
         width: 192px;
