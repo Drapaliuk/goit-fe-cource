@@ -28,7 +28,7 @@ body {
     .reg-wrapper {
         justify-content: flex-end;
     }
-    .log-in {
+    .reg-button {
         width: 90px;
         height: 36px;
         background-color: transparent;
@@ -37,29 +37,16 @@ body {
         font-weight: 700;
         border: none;
         outline: none;
+        transition: all 300ms linear;
+        border: 2px solid transparent;
+        border-radius: 13px;
+        cursor: pointer;      
     }
     .log-in:hover {
         border: 2px solid #ffffff;
-        background-color: transparent;
-        border: 2px solid #ffffff;
-        border-radius: 13px;
-        cursor: pointer;
-    }
-    .sign-up {
-        width: 90px;
-        height: 36px;
-        background-color: transparent;
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 700;
-        border: none;
-        outline: none;
-
     }
     .sign-up:hover {
         border: 2px solid #ffffff;
-        border-radius: 13px;
-        cursor: pointer;
     }
     .site-logo {
         color: #ffffff;
@@ -97,7 +84,17 @@ body {
         font-weight: 700;
         color: #ffffff;
         outline: none;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: all 500ms linear;
     }
+    .find-partner:hover{
+        background-color: transparent;
+        border: 1px solid #ffffff;
+
+    }
+
+    
     main {
         width: 320px;
         height: min-content;
@@ -146,19 +143,19 @@ body {
         right: 28%;
     }
     .bredlay {
-        background-image: url(iconpartner1.png);
+        background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/iconpartner1.png);
         background-color: #ff4e50;
     }
     .lucas {
-        background-image: url(iconpartner2.png);
+        background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/iconpartner2.png);
         background-color: #ffa507;
     }
     .heather{
-        background-image: url(iconpartner3.png);
+        background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/iconpartner3.png);
         background-color: #1cd7ad;
     }
     .bredlay2 {
-        background-image: url(iconpartner4.png);
+        background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/iconpartner4.png);
         background-color: #4e73db;
     }
     .partner-list-item h3 {
