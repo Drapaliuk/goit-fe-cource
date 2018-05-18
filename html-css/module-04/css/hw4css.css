@@ -11,6 +11,12 @@ img{
     clear: both;
     content: "";
 }
+article{
+    margin-bottom: 70px;
+}
+.main-header{
+    margin-bottom: 90px;
+}
 nav{
     width: 1373px;
     height: 59px;
@@ -26,6 +32,7 @@ nav{
     line-height: 32px;
     letter-spacing: -0.6;
     font-family: 'Roboto', sans-serif;
+    margin-top: 18px;
 }
 .site-logo::first-letter{
     color: #1abc9c;
@@ -37,20 +44,22 @@ nav{
     list-style: none;
     float: right;
     min-height: 10px;
+    padding: 0;
 
 }
+.nav-list-item:not(:last-child){
+    margin-right: 20px;  
+}
 .nav-list-item{
-    display: inline-block;
+    display: inline;
 }
 .nav-list-item a{
     text-decoration: none;
     font-weight: 700px;
     color: #0f0101;
     text-transform: uppercase;
-    margin-right: 20px;
     font-size: 14px;
     line-height: 11px;
-    float: left;
     font-family: 'Open Sans', sans-serif;
 }
 .nav-list-item a:hover{
@@ -60,12 +69,13 @@ nav{
 h1{
     font-size: 48px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 0px;
     text-transform: uppercase;
     letter-spacing: -0.96px;
     color: #515151;
     text-align: center;
     font-family: 'Roboto - Black', sans-serif;
+    margin-top: 0;
 }
 h1::after{
     content: "";
@@ -77,7 +87,7 @@ h1::after{
     margin-top: 30px;
 }
 .featured-list{
-    width: 1163px;
+    max-width: 1163px;
     min-height: 800px;
     margin: auto;
     list-style: none;
@@ -221,8 +231,8 @@ h1::after{
     display: block;
 }
 .latest-news{
-    width: 1200px;
-    height: 649px;
+    max-width: 1200px;
+    min-height: 649px;
     margin: auto;
 }
 .latest-news-title{
@@ -234,6 +244,7 @@ h1::after{
     text-transform: uppercase;
     letter-spacing: -0.96px;
     font-family: 'Roboto -Black', sans-serif;
+    margin-top: 0px;
 }
 .latest-news-title::after{
     width: 164px;
@@ -246,13 +257,15 @@ h1::after{
 }
 .latest-news-list{
     list-style: none;
-    width: 1200px;
-    height: 649px;
+    max-width: 1200px;
+    min-height: 649px;
     padding: 0;
+    margin-top:0px;
+    margin-bottom: 0px;
 }
 .latest-news-list-item{
     width: 350px;
-    height: 496px;
+    min-height: 496px;
 }
 .latest-news-list-item:nth-child(1){
     float: left;
@@ -301,4 +314,5 @@ h1::after{
     letter-spacing: -0.32px;
     font-family: 'Open Sans', sans-serif;
     outline: none;
+    cursor: pointer;
 } 

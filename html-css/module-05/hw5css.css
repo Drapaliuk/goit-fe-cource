@@ -16,8 +16,14 @@ img {
     content: "";
 }
 
+.main-header {
+    max-width: 1600px;
+    min-height: 91px;
+    margin: auto;
+}
+
 .main-nav {
-    width: 1600px;
+    max-width: 1100px;
     height: 91px;
     margin: auto;
 }
@@ -31,7 +37,8 @@ img {
     letter-spacing: -0.6px;
     text-decoration: none;
     color: #555252;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    margin-top: 18px;
 }
 
 .site-logo::first-letter {
@@ -76,16 +83,14 @@ main {
 
 .header-of-main {
     min-height: 550px;
-    width: 1600px;
+    max-width: 1600px;
     margin: auto;
     margin-bottom: 50px;
-    background-color: black;
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/girl.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-}
-
-.girls {
-    opacity: 0.9;
-    max-width: 100%;
 }
 
 .slide {
@@ -117,7 +122,7 @@ main {
 }
 
 .header-title-container {
-    width: 738px;
+    max-width: 738px;
     min-height: 98px;
     position: absolute;
     left: 440px;
@@ -156,6 +161,7 @@ h1 {
     font-size: 48px;
     text-align: center;
     font-family: sans-serif;
+    margin-top: 0px;
 }
 
 h1::after {
@@ -170,12 +176,11 @@ h1::after {
 }
 
 .new-collection-list {
-    width: 1600px;
-    min-height: 676px;
+    max-width: 1600px;
+    min-height: 500px;
     margin: auto;
     padding-left: 245px;
     padding-right: 245px;
-    padding-top: 254px;
     padding-bottom: 100px;
     box-sizing: border-box;
     font-size: 0;
@@ -186,7 +191,7 @@ h1::after {
     margin: auto;
     position: relative;
     font-size: 0;
-    height: 362px;
+    min-height: 362px;
 }
 
 .new-collection-list-item:not(:last-child) {
@@ -233,77 +238,74 @@ h1::after {
 
 .new-collection-list-hover {
     position: absolute;
-    top: 1px;
-    height: 308px;
-    width: 238px;
-    list-style: none;
-    top: 8px;
-    left: 8px;
+    height: 322px;
+    width: 255px;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .new-collection-list-hover:hover {
     background-color: black;
     opacity: 0.5;
+    border: 10px solid #ffffff;
 }
 
 .new-collection-list-hover:hover>button {
     width: 50px;
     height: 50px;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     background-color: transparent;
     display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.new-collection-list-hover:hover>button:hover {
+    background-color: #1abc9c;
 }
 
 .new-collection-list-hover:hover>.cart {
     width: 166px;
     height: 50px;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     background-color: transparent;
     display: inline-block;
 }
 
-.heart {
+.social-button {
     width: 50px;
     height: 50px;
     border: none;
     background-color: transparent;
-    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/heart.png);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 100px;
-    left: 50px;
     display: none;
     outline: none;
+}
+
+.heart {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/heart.png);
+    top: 100px;
+    left: 40px;
 }
 
 .arrows {
-    width: 50px;
-    height: 50px;
-    border: none;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/arrows1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
     top: 100px;
-    left: 108px;
-    display: none;
-    outline: none;
+    left: 103px;
 }
 
 .timer {
-    width: 50px;
-    height: 50px;
-    border: none;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/timer1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
     top: 100px;
-    left: 168px;
-    display: none;
-    outline: none;
-    z-index: 2;
+    left: 161px;
 }
 
 .cart {
@@ -347,8 +349,8 @@ h1::after {
 }
 
 footer {
-    width: 1600px;
-    height: 88px;
+    max-width: 1600px;
+    min-height: 88px;
     background-color: #323232;
     margin: auto;
     font-size: 16px;
