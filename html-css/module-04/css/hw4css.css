@@ -85,6 +85,7 @@ h1::after{
     height: 7px;
     background-color: #1abc9c;
     margin: auto;
+    margin-top: 0;
 }
 .featured-list{
     max-width: 1163px;
