@@ -8,12 +8,14 @@ body {
         font-family: 'Montserrat', sans-serif;
     }
     header {
-        width: 320px;
+        width: 100%;
         height: 540px;
         background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/header-mobile.png);
         background-color: black;
         position: relative;
         margin: auto;
+        background-position: center;
+        background-size: cover;
     }
     nav {
         background: transparent;
@@ -109,12 +111,12 @@ body {
         background-color: #ff4e50;
     }
     main {
-        width: 320px;
+        max-width: 320px;
         height: min-content;
         margin: auto;
     }
     .partner-section {
-        width: 320px;
+        max-width: 320px;
         height: min-content;
     }
     h2 {
@@ -134,6 +136,10 @@ body {
     }
     .partner-list-item:not(:last-child) {
         margin-bottom: 30px;
+    }
+    .partner-list-item{
+        padding: 5px;
+        margin: auto;
     }
     .img-container {
         width: 280px;
@@ -191,8 +197,8 @@ body {
     }
     .partners-button {
         margin: auto;
-        width: 280px;
-        height: 40px;
+        min-width: 280px;
+        min-height: 40px;
         border-radius: 20px;
         background-color: #ffffff;
         border: 2px solid #ff4e50;
@@ -220,7 +226,7 @@ body {
 
 @media (min-width: 768px) {
     header {
-        width: 768px;
+        width: 100%;
         height: 700px;
         background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/header-tablet.png);
         margin-bottom: 50px;
@@ -246,11 +252,6 @@ body {
     .sign-up {
         width: 90px;
         height: 36px;
-        background-color: transparent;
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 700;
-        border: none;
     }
     h1 {
         font-size: 30px;
@@ -262,16 +263,16 @@ body {
         margin-bottom: 135px;
     }
     .find-partner {
-        width: 226px;
-        height: 40px;
+        min-width: 226px;
+        min-height: 40px;
     }
     main {
-        width: 768px;
+        max-width: 768px;
         height: 600px;
         margin: auto;
     }
     .partner-section {
-        width: 768px;
+        max-width: 768px;
         height: min-content;
     }
     h2 {
@@ -295,6 +296,7 @@ body {
     }
     .partner-list-item:nth-child(odd) {
         margin-right: 30px;
+        margin-top: 0;
     }
     .partner-list-item:nth-last-child(-n+2) {
         margin-bottom: 0px;
@@ -317,7 +319,7 @@ body {
     }
     .partners-button {
         width: 280px;
-        height: 40px;
+        min-height: 40px;
         border-radius: 20px;
         border: 2px solid #ff4e50;
     }
@@ -325,7 +327,7 @@ body {
 
 @media (min-width: 1440px) {
     header {
-        width: 1440px;
+        width: 100%;
         height: 700px;
         background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/vector-smart-object.png);
         margin-bottom: 72px;
@@ -346,21 +348,22 @@ body {
         font-size: 52px;
     }
     .find-partner {
-        width: 225px;
-        height: 40px;
+        min-width: 225px;
+        min-height: 40px;
     }
     main {
-        width: 1440px;
+        max-width: 1440px;
         min-height: 1210px;
         margin: auto;
     }
     .partner-section {
-        width: 1440px;
+        max-width: 1440px;
         height: min-content;
     }
     h2 {
         font-weight: 700;
-        font-size: 22px;
+        font-size: 32px;
+        margin-bottom: 50px;
     }
     .partner-list {
         width: 100%;
@@ -376,12 +379,13 @@ body {
     }
     .partner-list-item:nth-child(n+1){
         margin-bottom: 0px;
+        margin-top: 0px;
     }
     .partner-list-item:not(:last-child){
         margin-right: 40px;
     }
     .partners-button {
-        width: 192px;
-        height: 40px;
+        min-width: 192px;
+        min-height: 40px;
     }
 }

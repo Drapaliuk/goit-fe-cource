@@ -1,8 +1,34 @@
+button {
+    cursor: pointer;
+}
+
 .main-header {
-    width: 1900px;
+    width: 100%;
     min-height: 1000px;
     margin: auto;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img/eagle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.virgo {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    min-height: 1000px;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: all 3s linear;    
+}
+
+.virgo:hover {
+    background: linear-gradient(#e88283, #ed8889, #f4ad8e, #fce38a);
+
 }
 
 .main-header__text {
@@ -36,4 +62,8 @@
     margin: auto;
     margin-top: 70px;
     outline: none;
+    transition: all 500ms linear;
+}
+.main-header__button:hover{
+    background-color: #e19779;
 }

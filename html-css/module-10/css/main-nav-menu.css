@@ -25,6 +25,7 @@
     height: 3px;
     background-color: #fce38a;
     margin: auto;
+    transition: all 1s linear;
 }
 
 .main-nav-menu--contact:hover::after{

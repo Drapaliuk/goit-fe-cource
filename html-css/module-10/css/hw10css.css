@@ -1,6 +1,6 @@
-@import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/main-header.css";
-@import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/main-nav.css";
-@import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/main-nav-menu.css";
+@import "main-header.css";
+@import "main-nav.css";
+@import "main-nav-menu.css";
 @import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/services.css";
 @import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/services-list.css";
 @import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/team.css";
@@ -8,3 +8,5 @@
 @import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/main-footer.css";
 @import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/footer-form.css";
 @import "https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/css/common.css";
+
+/* https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/ */
