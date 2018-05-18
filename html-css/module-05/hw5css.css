@@ -83,7 +83,7 @@ main {
 
 .header-of-main {
     min-height: 550px;
-    max-width: 1600px;
+    max-width:100%;
     margin: auto;
     margin-bottom: 50px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/girl.jpg);
@@ -267,7 +267,10 @@ img {
 }
 
 .new-collection-list-hover:hover>button:hover {
-    background-color: #1abc9c;
+    background-color: #17a186;
+}
+.new-collection-list-hover:active>button:hover {
+    background-color: #106655;
 }
 
 .new-collection-list-hover:hover>.cart {
@@ -277,6 +280,7 @@ img {
     background-color: transparent;
     display: inline-block;
 }
+
 
 .social-button {
     width: 50px;
@@ -293,28 +297,28 @@ img {
 .heart {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/heart.png);
     top: 100px;
-    left: 40px;
+    left: 36px;
 }
 
 .arrows {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/arrows1.png);
     top: 100px;
-    left: 103px;
+    left: 94px;
 }
 
 .timer {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/timer1.png);
     top: 100px;
-    left: 161px;
+    right: 33px;
 }
 
 .cart {
-    width: 166px;
-    height: 50px;
+    width: 130px;
+    height: 200px;
     border: none;
     position: absolute;
     top: 160px;
-    left: 50px;
+    left: 36px;
     display: none;
     outline: none;
     vertical-align: middle;
@@ -349,7 +353,7 @@ img {
 }
 
 footer {
-    max-width: 1600px;
+    max-width: 100%;
     min-height: 88px;
     background-color: #323232;
     margin: auto;
@@ -367,14 +371,4 @@ footer p {
 autor {
     color: #46bfa9;
     letter-spacing: -0.32px;
-}
-
-.bnig {
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-}
-
-.bnig:hover {
-    background-color: red;
 }
