@@ -137,7 +137,10 @@ h1::after {
 .digital::before {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/image.png);
 }
-
+.team{
+    max-width: 1920px;
+    margin: auto;
+}
 .about-team {
     width: 941px;
     min-height: 39px;
@@ -178,7 +181,7 @@ h1::after {
     margin: auto;
     margin-bottom: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style: none;
 }
 
