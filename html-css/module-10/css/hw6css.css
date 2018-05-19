@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-header {
+    max-width: 1920px;
+    min-height: 1000px;
+    margin: auto;
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img/eagle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.virgo {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    min-height: 1000px;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: all 3s linear;
+    background: linear-gradient(#f4ad8e, #fce38a);
+    
+}
+
+.virgo:hover {
+    background: linear-gradient(#e88283, #ed8889, #f4ad8e, #fce38a);
+}
+
+.main-header__text {
+    color: #ffffff;
+    font-family: "Kaushan Script";
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-header__title {
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+}
+
+.main-header__button {
+    display: block;
+    width: 160px;
+    min-height: 40px;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 70px;
+    outline: none;
+    transition: all 500ms linear;
+    cursor: pointer;
+}
+
+.main-header__button:hover {
+    background-color: #e19779;
+}
+
+.main-nav__logo {
+    font-size: 30px;
+    font-style: bold;
+    color: #ffffff;
+    text-decoration: none;
+    width: 130px;
+    height: 68px;
+    margin-top: 16px;
+}
+
+.main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 100px;
+    width: 1196px;
+    margin: auto;
+}
+
+.main-nav-menu {
+    width: 620px;
+    min-height: 50px;
+}
+
+.main-nav-menu__item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+    min-height: 34px;
+}
+
+.main-nav-menu__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.main-nav-menu__link:hover::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #fce38a;
+    margin: auto;
+    transition: all 1s linear;
+}
+
+.main-nav-menu--contact:hover::after {
+    width: 67px;
+}
+
+.main-nav-menu--blog:hover::after {
+    width: 38px;
+}
+
+.main-nav-menu--work:hover::after {
+    width: 46px;
+}
+
+.main-nav-menu--srvice:hover::after {
+    width: 60px;
+}
+
+.main-nav-menu--about:hover::after {
+    width: 51px;
+}
+
+.main-nav-menu__icon {
+    fill: #ffffff;
+    width: 14px;
+    height: 14px;
+}
+
+.main-nav-menu__icon:hover {
+    fill: #fce38a;
+    text-decoration: none;
+}
+
+.main-nav-menu__link:hover {
+    color: #fce38a;
+    -webkit-text-decoration-style: bold;
+    text-decoration-style: bold;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 30px;
+    font-style: bold;
+    color: #95E1D3;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-menu-item {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.nav-menu-item a {
+    color: #95E1D3;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+.nav-menu-item a:hover {
+    color: #F38181;
+    text-decoration: underline;
+    text-decoration-style: bold;
+    cursor: pointer;
+}
+
+.nav-menu-item:last-child {
+    margin-right: 0;
+}
+
+.text-before-first-title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.services-list {
+    max-width: 1200px;
+    min-height: 419px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services-list-item p {
+    font-size: 15px;
+    width: 250px;
+    color: #999999;
+    min-height: min-content;
+    margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services-list-item {
+    width: 330px;
+    min-height: 70;
+    list-style: none;
+}
+
+.services-list-link {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333333
+}
+
+.services-list-link::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.photography::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/alarm.png);
+}
+
+.design::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/line-graph.png);
+}
+
+.creativity::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/computer.png);
+}
+
+.seo::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/book.png);
+}
+
+.css::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/home.png);
+}
+
+.digital::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/image.png);
+}
+.team{
+    max-width: 1920px;
+    margin: auto;
+}
+.about-team {
+    width: 941px;
+    min-height: 39px;
+    font-size: 15px;
+    color: #999999;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-before-second-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 0;
+}
+
+.title-second-section {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.meat-our-team::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;
+    margin: auto;
+}
+
+.team-list {
+    width: max-content;
+    min-height: min-content;
+    margin: auto;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.team-list-item-color {
+    background-color: #95E1D3;
+    font-size: 0px;
+}
+
+.img-wrapper::before {
+    content: "";
+    width: 380px;
+    height: 470px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
+    transition: all 150ms linear;
+}
+
+.img-wrapper:hover::before {
+    background: linear-gradient(#ed8889, #f4ad8e, #fce38a);
+}
+
+.img-wrapper:hover>button {
+    display: block;
+    width: 56px;
+    height: 56px;
+    display: inline;
+    background-color: #fce38a;
+    margin-right: 4px;
+    border: none;
+    transition: all 180ms linear;
+}
+
+.img-wrapper:hover>button:hover {
+    background-color: #95e1D3;
+}
+
+.img-wrapper {
+    transition: all 500ms linear;
+}
+
+.img-wrapper:hover {
+    transform: translate(-15px, -15px);
+}
+
+.team-list-item p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+
+.team-list-item h4 {
+    color: #333333;
+}
+
+.team-list-item {
+    position: relative;
+}
+
+.team-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social-button {
+    display: none;
+    outline: none;
+    cursor: pointer;
+    top: 207px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-button__icon-facebook {
+    width: 30px;
+    height: 30px;
+    fill: #f38181;
+}
+
+.img-wrapper>button>svg{
+    transition: all 180ms linear;
+}
+.img-wrapper:hover>button:hover>svg {
+    fill: #ffffff;
+}
+.img-wrapper:hover>button:active>svg {
+    fill: #f38181
+}
+.img-wrapper:hover>button:active{
+    background-color: white;
+}
+.facebook {
+    left: 70px;
+}
+
+.twitter {
+    left: 131px;
+}
+
+.pinterest {
+    left: 192px;
+}
+
+.instagram {
+    left: 253px;
+}
+
+.team-list-item>h4,
+p {
+    text-align: center;
+}
+
+footer {
+    width: 1200px;
+    min-height: 51px;
+    margin: auto;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid #e7e7e7;
+}
+
+form {
+    font-size: 0;
+}
+
+.email {
+    width: 230px;
+    height: 40px;
+    margin-right: 0;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+}
+
+.button-submit {
+    width: 150px;
+    height: 40px;
+    background-color: #95E1D3;
+    margin-left: 0;
+    border: none;
+    border: 1px solid #95E1D3;
+    box-sizing: content-box;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.page-footer {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+author {
+    color: #f38181;
+}
