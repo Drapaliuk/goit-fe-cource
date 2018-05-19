@@ -118,7 +118,7 @@ main {
 
 .right {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/right.png);
-    right: 0px;
+    right: 30px;
 }
 
 .header-title-container {
@@ -371,4 +371,5 @@ footer p {
 autor {
     color: #46bfa9;
     letter-spacing: -0.32px;
+
 }
