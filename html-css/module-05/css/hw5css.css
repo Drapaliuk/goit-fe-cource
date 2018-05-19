@@ -24,7 +24,7 @@ img {
 
 .main-nav {
     max-width: 1100px;
-    height: 91px;
+    min-height: 91px;
     margin: auto;
 }
 
@@ -87,10 +87,10 @@ main {
     margin: auto;
     margin-bottom: 50px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/girl.jpg);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    display: flex;
 }
 
 .slide {
@@ -103,8 +103,8 @@ main {
     cursor: pointer;
     border: none;
     position: absolute;
-    top: 225px;
-    opacity: 0.5;
+    top: 1px;
+    opacity: 0.8;
 }
 
 .slide:hover {
@@ -113,23 +113,21 @@ main {
 
 .left {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/left.png);
-    left: 245px;
+    left: 0px;
 }
 
 .right {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/right.png);
-    right: 245px;
+    right: 0px;
 }
 
 .header-title-container {
-    max-width: 738px;
+    width: 1000px;
     min-height: 98px;
-    position: absolute;
-    left: 440px;
-    top: 219px;
     padding-top: 1px;
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
+    position: relative
 }
 
 .header-title1 {
@@ -141,6 +139,7 @@ main {
     font-family: sans-serif;
     letter-spacing: -1.2px;
     margin: 5px;
+    margin: auto;
 }
 
 .header-title2 {
@@ -152,6 +151,7 @@ main {
     font-family: sans-serif;
     letter-spacing: -1.2px;
     margin-top: 10px;
+    margin: auto;
 }
 
 h1 {
@@ -252,7 +252,7 @@ img {
 
 .new-collection-list-hover:hover {
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.75;
     border: 10px solid #ffffff;
 }
 
