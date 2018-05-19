@@ -368,12 +368,7 @@ footer p {
     margin: auto;
 }
 
-.ThemenGraph{
-    text-decoration: none;
+autor {
     color: #46bfa9;
-    letter-spacing: -0.32px; 
-}
-.ThemenGraph:hover{
-    font-size: 1.5rem;
-    color: #d0e74b; 
+    letter-spacing: -0.32px;
 }
