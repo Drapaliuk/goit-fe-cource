@@ -368,12 +368,12 @@ footer p {
     margin: auto;
 }
 
-autor a{
+autor > a{
     text-decoration: none;
     color: #46bfa9;
     letter-spacing: -0.32px; 
 }
-autor a:hover{
+autor > a:hover{
     font-size: 1.5rem;
     color: #d0e74b; 
 }
