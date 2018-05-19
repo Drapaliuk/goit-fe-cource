@@ -4,10 +4,161 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    width: 1200px;
-    min-height: 37px;
+.main-header {
+    max-width: 1920px;
+    min-height: 1000px;
     margin: auto;
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img/eagle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.virgo {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    min-height: 1000px;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: all 3s linear;
+}
+
+.virgo:hover {
+    background: linear-gradient(#e88283, #ed8889, #f4ad8e, #fce38a);
+}
+
+.main-header__text {
+    color: #ffffff;
+    font-family: "Kaushan Script";
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-header__title {
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+}
+
+.main-header__button {
+    display: block;
+    width: 160px;
+    min-height: 40px;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 70px;
+    outline: none;
+    transition: all 500ms linear;
+    cursor: pointer;
+}
+
+.main-header__button:hover {
+    background-color: #e19779;
+}
+
+.main-nav__logo {
+    font-size: 30px;
+    font-style: bold;
+    color: #ffffff;
+    text-decoration: none;
+    width: 130px;
+    height: 68px;
+    margin-top: 16px;
+}
+
+.main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 100px;
+    width: 1196px;
+    margin: auto;
+}
+
+.main-nav-menu {
+    width: 620px;
+    min-height: 50px;
+}
+
+.main-nav-menu__item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+    min-height: 34px;
+}
+
+.main-nav-menu__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.main-nav-menu__link:hover::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #fce38a;
+    margin: auto;
+    transition: all 1s linear;
+}
+
+.main-nav-menu--contact:hover::after {
+    width: 67px;
+}
+
+.main-nav-menu--blog:hover::after {
+    width: 38px;
+}
+
+.main-nav-menu--work:hover::after {
+    width: 46px;
+}
+
+.main-nav-menu--srvice:hover::after {
+    width: 60px;
+}
+
+.main-nav-menu--about:hover::after {
+    width: 51px;
+}
+
+.main-nav-menu__icon {
+    fill: #ffffff;
+    width: 14px;
+    height: 14px;
+}
+
+.main-nav-menu__icon:hover {
+    fill: #fce38a;
+    text-decoration: none;
+}
+
+.main-nav-menu__link:hover {
+    color: #fce38a;
+    -webkit-text-decoration-style: bold;
+    text-decoration-style: bold;
+    cursor: pointer;
 }
 
 .logo {
@@ -39,17 +190,17 @@ header {
     text-transform: uppercase;
     transition: all .2s linear;
 }
+
 .nav-menu-item a:hover {
     color: #F38181;
     text-decoration: underline;
     text-decoration-style: bold;
     cursor: pointer;
 }
+
 .nav-menu-item:last-child {
     margin-right: 0;
 }
-
-
 
 .text-before-first-title {
     font-weight: 400;
@@ -198,12 +349,12 @@ h1::after {
     opacity: 0.7;
     transition: all 150ms linear;
 }
+
 .img-wrapper:hover::before {
     background: linear-gradient(#ed8889, #f4ad8e, #fce38a);
-
 }
 
-.img-wrapper:hover > button {
+.img-wrapper:hover>button {
     display: block;
     width: 56px;
     height: 56px;
@@ -214,11 +365,11 @@ h1::after {
     transition: all 180ms linear;
 }
 
-.img-wrapper:hover > button:hover {
+.img-wrapper:hover>button:hover {
     background-color: #95e1D3;
 }
 
-.img-wrapper{
+.img-wrapper {
     transition: all 500ms linear;
 }
 

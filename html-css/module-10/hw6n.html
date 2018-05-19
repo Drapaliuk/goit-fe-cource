@@ -6,34 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Module06</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/hw6cssn.css"
-    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hw6cssn.css" />
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 <!-- https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/ -->
+
 <body>
-    <header>
-        <nav class="main-nav">
-            <a class="logo" href="#">MoGo</a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a href="#">contact</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#">blog</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#">work</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#">service</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#">about</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="virgo">
+            <nav class="main-nav">
+                <a class="main-nav__logo" href="#">MoGo</a>
+                <ul class="main-nav-menu">
+                    <li class="main-nav-menu__item">
+                        <a class="main-nav-menu__link main-nav-menu--about" href="#">about</a>
+                    </li>
+                    <li class="main-nav-menu__item">
+                        <a class="main-nav-menu__link main-nav-menu--services" href="#">service</a>
+                    </li>
+                    <li class="main-nav-menu__item">
+                        <a class="main-nav-menu__link main-nav-menu--work" href="#">work</a>
+                    </li>
+                    <li class="main-nav-menu__item">
+                        <a class="main-nav-menu__link main-nav-menu--blog" href="#">blog</a>
+                    </li>
+                    <li class="main-nav-menu__item">
+                        <a class="main-nav-menu__link main-nav-menu--contact" href="#">contact</a>
+                    </li>
+                    <li class="main-nav-menu__item">
+                        <a href="#">
+                            <svg class="main-nav-menu__icon main-nav-menu--cart">
+                                <use href="https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/sprite/symbol-defs.svg#cart"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="main-nav-menu__item">
+                        <a href="#">
+                            <svg class="main-nav-menu__icon main-nav-menu--glass">
+                                <use href="https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/sprite/symbol-defs.svg#glass"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="main-header__text">Creative Temolate</p>
+            <h2 class="main-header__title">welcome
+                <br>to mogo</h2>
+            <button class="main-header__button">learn more</button>
+        </div>
     </header>
     <main>
         <section class="services">
