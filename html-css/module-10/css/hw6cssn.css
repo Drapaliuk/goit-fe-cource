@@ -33,6 +33,7 @@ body {
     font-size: 72px;
     font-weight: 400;
     text-align: center;
+    margin-top: 0;
 }
 
 .main-header__title {
@@ -92,6 +93,7 @@ body {
     min-height: 100px;
     max-width: 1196px;
     margin: auto;
+    margin-bottom: 70px;
 }
 
 .main-nav-menu {
@@ -215,10 +217,15 @@ body {
     font-size: 24px;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
+    margin-top: 0;
 }
-
+.services{
+    max-width: 1200px;
+    margin: auto;
+}
 h1 {
     text-align: center;
+    margin-top: 0px;
 }
 
 h1::after {
@@ -238,11 +245,11 @@ main {
 
 .services-list {
     max-width: 1200px;
-    min-height: 419px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0;
 }
 
 .services-list-item p {
@@ -256,7 +263,6 @@ main {
 
 .services-list-item {
     width: 330px;
-    min-height: 70;
     list-style: none;
 }
 
@@ -512,7 +518,4 @@ form {
 
 author {
     color: #f38181;
-}
-@media (min-width:768px){
-
 }

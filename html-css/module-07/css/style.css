@@ -251,11 +251,13 @@ h2 {
     cursor: pointer;
     transition: all 250ms linear;
     border: 1px solid transparent;
+    outline: none;
 }
 .send:hover{
     background-color: transparent;
     border: 1px solid #fed136;
-    color: #fed136;
-
-    
+    color: #fed136;    
+}
+.send:active{
+    transform: scale(0.97, 0.97)
 }

@@ -5,9 +5,10 @@ body {
 }
 
 header {
-    width: 1200px;
+    max-width: 100%;
     min-height: 37px;
     margin: auto;
+    margin-bottom: 24px;
 }
 
 .logo {
@@ -18,8 +19,11 @@ header {
 }
 
 .main-nav {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav-menu {
@@ -39,27 +43,31 @@ header {
     text-transform: uppercase;
     transition: all .2s linear;
 }
+
 .nav-menu-item a:hover {
     color: #F38181;
     text-decoration: underline;
     text-decoration-style: bold;
     cursor: pointer;
 }
+
 .nav-menu-item:last-child {
     margin-right: 0;
 }
-
-
 
 .text-before-first-title {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
+    margin-top: 0;
     font-family: 'Kaushan Script', cursive;
 }
-
+main{
+    max-width: 100%;
+}
 h1 {
     text-align: center;
+    margin-top: 0;
 }
 
 h1::after {
@@ -75,11 +83,12 @@ h1::after {
 
 .services-list {
     max-width: 1200px;
-    min-height: 419px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0;
+    margin-bottom: 24px;
 }
 
 .services-list-item p {
@@ -93,7 +102,6 @@ h1::after {
 
 .services-list-item {
     width: 330px;
-    min-height: 70;
     list-style: none;
 }
 
@@ -137,13 +145,14 @@ h1::after {
 .digital::before {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/image.png);
 }
-.team{
+
+.team {
     max-width: 1920px;
     margin: auto;
 }
+
 .about-team {
-    width: 941px;
-    min-height: 39px;
+    max-width: 941px;
     font-size: 15px;
     color: #999999;
     margin: auto;
@@ -176,13 +185,14 @@ h1::after {
 }
 
 .team-list {
-    width: max-content;
-    min-height: min-content;
+    max-width: 1400px;
     margin: auto;
     margin-bottom: 200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 .team-list-item-color {
@@ -201,12 +211,12 @@ h1::after {
     opacity: 0.7;
     transition: all 150ms linear;
 }
+
 .img-wrapper:hover::before {
     background: linear-gradient(#ed8889, #f4ad8e, #fce38a);
-
 }
 
-.img-wrapper:hover > button {
+.img-wrapper:hover>button {
     display: block;
     width: 56px;
     height: 56px;
@@ -217,11 +227,11 @@ h1::after {
     transition: all 180ms linear;
 }
 
-.img-wrapper:hover > button:hover {
+.img-wrapper:hover>button:hover {
     background-color: #95e1D3;
 }
 
-.img-wrapper{
+.img-wrapper {
     transition: all 500ms linear;
 }
 
@@ -284,7 +294,7 @@ p {
 }
 
 footer {
-    width: 1200px;
+    max-width: 100%;
     min-height: 51px;
     margin: auto;
     display: flex;
@@ -293,6 +303,14 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
     border-top: 1px solid #e7e7e7;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
 }
 
 form {
@@ -326,6 +344,7 @@ form {
     font-weight: 400;
 }
 
-author {
+.autor-link{
     color: #f38181;
+    text-decoration: none;
 }

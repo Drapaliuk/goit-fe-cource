@@ -26,6 +26,7 @@ body {
         flex-direction: column-reverse;
         justify-content: space-between;
         margin-bottom: 30px;
+        margin: auto;
     }
     .reg-wrapper {
         justify-content: flex-end;
@@ -85,6 +86,8 @@ body {
         font-family: Roboto;
         font-size: 18px;
         font-weight: 300;
+        margin-top: 0px;
+        margin-bottom: 150px;
     }
     .find-partner {
         background-color: #ff4e50;
@@ -104,11 +107,10 @@ body {
         transition: all 500ms linear;
     }
     .find-partner:hover {
-        background-color: transparent;
         border: 1px solid #ffffff;
     }
     .find-partner:active {
-        background-color: #ff4e50;
+        transform: scale(0.96, 0.96);
     }
     main {
         max-width: 320px;
@@ -137,7 +139,7 @@ body {
     .partner-list-item:not(:last-child) {
         margin-bottom: 30px;
     }
-    .partner-list-item{
+    .partner-list-item {
         padding: 5px;
         margin: auto;
     }
@@ -214,13 +216,12 @@ body {
         cursor: pointer;
         transition: all 200ms linear;
     }
-    .partners-button:hover{
+    .partners-button:hover {
         background-color: #ff4e50;
         color: #ffffff;
     }
     .partners-button:active {
-        background-color: #ff4e50;
-        color: #ffffff;
+        transform: scale(0.96, 0.96);
     }
 }
 
@@ -377,15 +378,16 @@ body {
         min-height: 235px;
         margin-bottom: 0px;
     }
-    .partner-list-item:nth-child(n+1){
+    .partner-list-item:nth-child(n+1) {
         margin-bottom: 0px;
         margin-top: 0px;
     }
-    .partner-list-item:not(:last-child){
+    .partner-list-item:not(:last-child) {
         margin-right: 40px;
     }
     .partners-button {
         min-width: 192px;
         min-height: 40px;
+        outline: none;
     }
 }
