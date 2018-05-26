@@ -79,12 +79,13 @@ img {
 
 main {
     background-color: #e9f0fd;
+    max-width: 100%;
+    margin: auto;
 }
 
 .header-of-main {
     min-height: 550px;
     max-width:100%;
-    margin: auto;
     margin-bottom: 50px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/girl.jpg);
     background-position: top;

@@ -1,20 +1,25 @@
-body{
+body {
     padding: 0;
     margin: 0;
 }
-header{
-    width: 933px;
+
+header {
+    max-width: 100%;
     min-height: 50px;
     margin: auto;
 }
-.main-nav{
-    min-height: 50px;    
+
+.main-nav {
+    max-width: 933px;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: auto;
     padding: 0;
 }
-.site-logo{
+
+.site-logo {
     font-size: 26px;
     font-weight: 400px;
     line-height: 41px;
@@ -24,19 +29,24 @@ header{
     text-transform: uppercase;
     font-family: 'Dancing Script', cursive;
 }
-.nav-list{
-    padding: 0;
-    margin: 0;   
-    vertical-align: top;
+
+.nav-list {
     min-height: 50px;
+    max-width: 600px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
 }
-.nav-list-item{
+
+.nav-list-item {
     display: inline;
 }
-.nav-list-item:not(:last-child){
-    margin-right: 20px;    
+
+.nav-list-item:not(:last-child) {
+    margin-right: 20px;
 }
-.nav-list-item a{
+
+.nav-list-item a {
     color: #222222;
     font-size: 14px;
     font-weight: 700;
@@ -46,19 +56,26 @@ header{
     justify-content: flex-end;
     font-family: 'Montserrat', sans-serif;
 }
-.nav-menu-item:hover{
+
+.nav-menu-item:hover {
     color: #fed136;
     font-size: 14px;
     font-weight: 400;
     line-height: 41px;
     text-transform: uppercase;
 }
-.srvices{
+
+main {
+    max-width: 100%;
+}
+
+.srvices {
     width: 934px;
     min-height: 330px;
     margin: auto;
 }
-h1{
+
+h1 {
     text-align: center;
     color: #222222;
     font-weight: 700;
@@ -69,27 +86,31 @@ h1{
     font-family: 'Montserrat', sans-serif;
     margin-top: 70px;
 }
-.services-subtext{
+
+.services-subtext {
     text-align: center;
     font-style: italic;
     font-size: 16px;
     color: #777777;
     margin-bottom: 70px;
 }
-.services-list{
-    width: 1170px;
-    min-height: 330px;
+
+.services-list {
+    max-width: 1170px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
-    margin: auto;  
-    padding: 0; 
+    margin: auto;
+    padding: 0;
 }
-.services-list-item{
+
+.services-list-item {
     width: 274px;
     min-height: 184px;
 }
-.services-list-item a{
+
+.services-list-item a {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -99,7 +120,8 @@ h1{
     text-decoration: none;
     display: block;
 }
-.img-wrapper{
+
+.img-wrapper {
     width: 68px;
     min-height: 67px;
     border-radius: 60px;
@@ -107,12 +129,14 @@ h1{
     display: flex;
     margin: auto;
 }
-.services-list-item img{
+
+.services-list-item img {
     max-width: 100%;
     max-height: 100%;
     margin: auto;
 }
-.services-list-item p{
+
+.services-list-item p {
     text-align: center;
     color: #777777;
     font-size: 14px;
@@ -120,7 +144,8 @@ h1{
     letter-spacing: -0.35;
     font-family: 'Roboto Slab', serif;
 }
-.contacts{
+
+.contacts {
     width: 100%;
     min-height: 676px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-07/img7/map-image.png);
@@ -132,12 +157,14 @@ h1{
     margin: auto;
     padding-top: 1px;
 }
-.form-wrapper{
+
+.form-wrapper {
     min-height: 330px;
-    width: 950px;
+    max-width: 950px;
     margin: auto;
 }
-h2{
+
+h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
@@ -148,7 +175,8 @@ h2{
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
 }
-.contacts-subtext{
+
+.contacts-subtext {
     color: #777777;
     font-style: italic;
     font-size: 16px;
@@ -156,37 +184,47 @@ h2{
     margin-bottom: 115px;
     margin-top: 0;
 }
-.user-contacts{
 
-}
-.contacts-wrapper{
+.contacts-wrapper {
     width: 455px;
     min-height: 210px;
     display: inline-block;
     padding: 0;
 }
-.user-contacts-item{
+
+.user-contacts-item {
+    width: 455px;
+    min-height: 50px;
+    border: none;
+    padding: 0;
+    display: block;
+    margin-bottom: 30px;
+    
+}
+/* .user-contacts-item:nth-child(:last-child){
+    margin-bottom: 
+}
+
+.user-contacts-item:not(:last-child) {
+    margin-bottom: 30px;
+} */
+
+.user-contacts input[type='name']:valid {
+    outline: 3px solid green;
+}
+
+.user-contacts input[type='email']:valid {
+    outline: 3px solid green;
+}
+
+.subject {
     width: 455px;
     min-height: 50px;
     border: none;
     padding: 0;
 }
-.user-contacts-item:not(:last-child){
-    margin-bottom: 30px;
-}
-.user-contacts input[type='name']:valid{
-    outline: 3px solid green;
-}
-.user-contacts input[type='email']:valid{
-    outline: 3px solid green;
-}
-.subject{
-    width: 455px;
-    min-height: 50px;
-    border: none; 
-    padding: 0;   
-}
-.message{
+
+.message {
     display: inline-block;
     width: 400px;
     min-height: 210px;
@@ -195,12 +233,14 @@ h2{
     padding: 0;
     border: none;
 }
-.user-contacts input[type='text']:valid{
+
+.user-contacts input[type='text']:valid {
     outline: 3px solid green;
 }
-.send{
+
+.send {
     width: 240px;
-    height: 66px;
+    min-height: 66px;
     display: block;
     margin: auto;
     margin-top: 30px;
@@ -208,4 +248,14 @@ h2{
     border: none;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 250ms linear;
+    border: 1px solid transparent;
+}
+.send:hover{
+    background-color: transparent;
+    border: 1px solid #fed136;
+    color: #fed136;
+
+    
 }

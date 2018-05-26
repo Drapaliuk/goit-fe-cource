@@ -16,10 +16,11 @@ article{
 }
 .main-header{
     margin-bottom: 90px;
+    max-width: 100%;
 }
 nav{
-    width: 1373px;
-    height: 59px;
+    max-width: 1373px;
+    min-height: 59px;
     margin: auto;
 }
 .site-logo{
@@ -66,25 +67,28 @@ nav{
     color: #1abc9c;
     letter-spacing: -0.28px;
 }
+main{
+    max-width: 100%;
+}
 h1{
     font-size: 48px;
     font-weight: 400;
-    line-height: 0px;
+    line-height: 48px;
     text-transform: uppercase;
     letter-spacing: -0.96px;
+    margin-top: 0px;
     color: #515151;
     text-align: center;
     font-family: 'Roboto - Black', sans-serif;
-    margin: auto;
 }
-h1::after{
+h1::after {
     content: "";
     display: block;
-    width: 164px;
+    max-width: 164px;
     height: 7px;
     background-color: #1abc9c;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .featured-list{
     max-width: 1163px;
@@ -92,10 +96,9 @@ h1::after{
     margin: auto;
     list-style: none;
     padding: 0px;
-    margin-top: 40px;
 }
 .featured-list-item{
-    height: 362px;
+    min-height: 362px;
     width: 255px;
     float: left;
     margin-right: 47px;
@@ -241,7 +244,6 @@ h1::after{
     color: #555252;
     font-size: 48px;
     font-weight: 400;
-    line-height: 32px;
     text-transform: uppercase;
     letter-spacing: -0.96px;
     font-family: 'Roboto -Black', sans-serif;
@@ -256,6 +258,11 @@ h1::after{
     content: "";
     margin-top: 30px;
 }
+article{
+    max-width: 1200px;
+    min-height: 649px;
+    margin: auto;
+}
 .latest-news-list{
     list-style: none;
     max-width: 1200px;
@@ -265,18 +272,19 @@ h1::after{
     margin-bottom: 0px;
 }
 .latest-news-list-item{
-    width: 350px;
+    max-width: 350px;
     min-height: 496px;
 }
 .latest-news-list-item:nth-child(1){
     float: left;
+    margin-right: 75px;
 }
 .latest-news-list-item:nth-child(2){
     float: left;
-    margin-left: 75px;
+    margin-right: 75px;
 }
 .latest-news-list-item:nth-child(3){
-    float: right;
+    float: left;
 }
 .latest-news-list-item img{
     display: block;
@@ -291,7 +299,7 @@ h1::after{
 .latest-news-list-item h3::after{
     content: "";
     display: block;
-    width: 135px;
+    max-width: 135px;
     height: 3px;
     background-color: #4ec6ab;
 }
@@ -301,9 +309,10 @@ h1::after{
     font-weight: 400;
     letter-spacing: -0.36px;
     font-family: 'Open Sans', sans-serif;
+    max-width: inherit;
 }
 .latest-news-list-item button{
-    width: 159px;
+    max-width: 159px;
     height: 51px;
     border: none;
     border-radius: 3px;
