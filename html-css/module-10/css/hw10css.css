@@ -127,26 +127,7 @@ body {
     height: 3px;
     background-color: #fce38a;
     margin: auto;
-}
-
-.main-nav-menu--contact:hover::after {
-    width: 67px;
-}
-
-.main-nav-menu--blog:hover::after {
-    width: 38px;
-}
-
-.main-nav-menu--work:hover::after {
-    width: 46px;
-}
-
-.main-nav-menu--srvice:hover::after {
-    width: 60px;
-}
-
-.main-nav-menu--about:hover::after {
-    width: 51px;
+    width: 100%;
 }
 
 .main-nav-menu__icon {

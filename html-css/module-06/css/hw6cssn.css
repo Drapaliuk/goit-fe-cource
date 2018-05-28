@@ -70,6 +70,7 @@ main{
 h1 {
     text-align: center;
     margin-top: 0;
+    margin-bottom: 25px;
 }
 
 h1::after {
@@ -80,7 +81,7 @@ h1::after {
     background-color: #F38181;
     margin: auto;
     margin-top: 25px;
-    margin-bottom: 25px;
+
 }
 
 .services-list {
@@ -179,13 +180,14 @@ h1::after {
     margin-bottom: 30px;
 }
 
-.meat-our-team::after {
+.title-second-section::after {
     content: "";
     display: block;
     width: 60px;
     height: 3px;
     background-color: #F38181;
     margin: auto;
+    margin-top: 25px;
 }
 
 .team-list {
