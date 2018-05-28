@@ -11,7 +11,7 @@ img{
     clear: both;
     content: "";
 }
-article{
+.products-section{
     margin-bottom: 70px;
 }
 .main-header{
@@ -98,7 +98,6 @@ h1::after {
     padding: 0px;
 }
 .featured-list-item{
-    min-height: 362px;
     width: 255px;
     float: left;
     margin-right: 47px;

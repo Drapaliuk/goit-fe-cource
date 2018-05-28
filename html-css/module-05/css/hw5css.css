@@ -18,6 +18,8 @@ img {
 
 .main-header {
     max-width: 100%;
+    min-height: 200px;
+    
 }
 
 .main-nav {
