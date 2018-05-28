@@ -92,7 +92,6 @@ h1::after {
 }
 .featured-list{
     max-width: 1163px;
-    min-height: 800px;
     margin: auto;
     list-style: none;
     padding: 0px;
