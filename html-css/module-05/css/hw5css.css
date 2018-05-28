@@ -87,16 +87,19 @@ main {
     min-height: 550px;
     max-width: 100%;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/girl.jpg);
+    opacity: 0.7;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
 }
-
+.header-of-main:hover{
+    opacity: 1;
+}
 .slide {
     width: 104px;
     height: 104px;
-    background-color: transparent;
+    background-color: #4ec6ab;
     background-position: center;
     background-repeat: no-repeat;
     outline: none;
@@ -105,10 +108,6 @@ main {
     position: absolute;
     top: 1px;
     opacity: 0.8;
-}
-
-.slide:hover {
-    background-color: #4ec6ab;
 }
 
 .left {
@@ -130,7 +129,7 @@ main {
     position: relative
 }
 
-article {
+.section-collection {
     padding-top: 50px;
 }
 
@@ -360,18 +359,20 @@ img {
 
 footer {
     max-width: 100%;
-    min-height: 88px;
+    height: 88px;
     background-color: #323232;
     margin: auto;
     font-size: 16px;
     color: #fefefe;
     font-weight: 400;
-    line-height: 28px;
-    display: flex;
+    padding-top: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    
 }
 
 footer p {
-    margin: auto;
+
 }
 
 autor {
