@@ -10,7 +10,7 @@ header {
 }
 
 .main-nav {
-    max-width: 933px;
+    max-width: 950px;
     min-height: 50px;
     display: flex;
     justify-content: space-between;
@@ -69,10 +69,10 @@ main {
     max-width: 100%;
 }
 
-.srvices {
-    width: 934px;
-    min-height: 330px;
+.services {
+    max-width: 950px;
     margin: auto;
+    padding-top: 70px;
 }
 
 h1 {
@@ -84,7 +84,7 @@ h1 {
     text-transform: uppercase;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 70px;
+    margin-top: 0;
 }
 
 .services-subtext {
@@ -93,12 +93,13 @@ h1 {
     font-size: 16px;
     color: #777777;
     margin-bottom: 70px;
+    margin-top: 0;
 }
 
 .services-list {
     max-width: 1170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     margin: auto;
@@ -110,6 +111,9 @@ h1 {
     min-height: 184px;
 }
 
+.services-list-item:not(:nth-child(3n+3)){
+    margin-right: 30px;
+}
 .services-list-item a {
     text-align: center;
     font-size: 18px;
@@ -199,8 +203,8 @@ h2 {
     padding: 0;
     display: block;
     margin-bottom: 30px;
-    
 }
+
 /* .user-contacts-item:nth-child(:last-child){
     margin-bottom: 
 }
@@ -253,11 +257,13 @@ h2 {
     border: 1px solid transparent;
     outline: none;
 }
-.send:hover{
+
+.send:hover {
     background-color: transparent;
     border: 1px solid #fed136;
-    color: #fed136;    
+    color: #fed136;
 }
-.send:active{
+
+.send:active {
     transform: scale(0.97, 0.97)
 }

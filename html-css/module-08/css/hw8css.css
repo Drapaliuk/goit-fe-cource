@@ -24,12 +24,9 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
-        justify-content: space-between;
-        margin-bottom: 30px;
+        justify-content: space-around;
         margin: auto;
-    }
-    .reg-wrapper {
-        justify-content: flex-end;
+        margin-bottom: 30px;
     }
     .reg-button {
         width: 90px;
@@ -120,6 +117,7 @@ body {
     .partner-section {
         max-width: 320px;
         height: min-content;
+        padding-top: 10px;
     }
     h2 {
         text-align: center;
@@ -131,7 +129,6 @@ body {
     }
     .partner-list {
         width: 280px;
-        min-height: min-content;
         list-style: none;
         margin: auto;
         padding: 0;
@@ -196,6 +193,7 @@ body {
         color: #666666;
         font-weight: 300;
         font-family: Roboto;
+        margin-top: 0px;
     }
     .partners-button {
         margin: auto;
@@ -230,7 +228,6 @@ body {
         width: 100%;
         height: 700px;
         background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/header-tablet.png);
-        margin-bottom: 50px;
     }
     nav {
         background: transparent;
@@ -238,7 +235,7 @@ body {
         min-height: 36px;
         display: flex;
         flex-direction: row;
-        justify-items: space-between;
+        justify-content: space-between;
         margin: auto;
         margin-bottom: 100px;
     }
@@ -275,6 +272,7 @@ body {
     .partner-section {
         max-width: 768px;
         height: min-content;
+        padding-top: 50px;
     }
     h2 {
         font-weight: 700;
@@ -293,8 +291,8 @@ body {
     .partner-list-item {
         display: inline-block;
         width: 194px;
-        min-height: 206px;
     }
+
     .partner-list-item:nth-child(odd) {
         margin-right: 30px;
         margin-top: 0;
@@ -331,11 +329,9 @@ body {
         width: 100%;
         height: 700px;
         background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-08/img/vector-smart-object.png);
-        margin-bottom: 72px;
     }
     nav {
-        width: 939px;
-        min-height: 36px;
+        width: 1200px;
     }
     .log-in {
         background-color: transparent;
@@ -367,23 +363,16 @@ body {
         margin-bottom: 50px;
     }
     .partner-list {
-        width: 100%;
-        min-height: 367px;
+        width: 1200px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
     }
     .partner-list-item {
         width: 217px;
-        min-height: 235px;
         margin-bottom: 0px;
     }
     .partner-list-item:nth-child(n+1) {
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .partner-list-item:not(:last-child) {
-        margin-right: 40px;
+        margin: 0px;
     }
     .partners-button {
         min-width: 192px;

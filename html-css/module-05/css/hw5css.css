@@ -17,9 +17,7 @@ img {
 }
 
 .main-header {
-    max-width: 1600px;
-    min-height: 91px;
-    margin: auto;
+    max-width: 100%;
 }
 
 .main-nav {
@@ -85,8 +83,7 @@ main {
 
 .header-of-main {
     min-height: 550px;
-    max-width:100%;
-    margin-bottom: 50px;
+    max-width: 100%;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-05/img/girl.jpg);
     background-position: top;
     background-repeat: no-repeat;
@@ -129,6 +126,10 @@ main {
     box-sizing: border-box;
     margin: auto;
     position: relative
+}
+
+article {
+    padding-top: 50px;
 }
 
 .header-title1 {
@@ -177,14 +178,15 @@ h1::after {
 }
 
 .new-collection-list {
-    max-width: 1600px;
-    min-height: 500px;
+    max-width: 1098px;
     margin: auto;
-    padding-left: 245px;
-    padding-right: 245px;
+    padding: 0;
     padding-bottom: 100px;
-    box-sizing: border-box;
     font-size: 0;
+}
+
+.collections-wrapper {
+    margin: auto
 }
 
 .new-collection-list-item {
@@ -193,10 +195,11 @@ h1::after {
     position: relative;
     font-size: 0;
     min-height: 362px;
+    margin-right: 26px;
 }
 
-.new-collection-list-item:not(:last-child) {
-    margin-right: 26px;
+.new-collection-list-item:nth-child(4n+4) {
+    margin-right: 0px;
 }
 
 .new-collection-list-item a {
@@ -270,6 +273,7 @@ img {
 .new-collection-list-hover:hover>button:hover {
     background-color: #17a186;
 }
+
 .new-collection-list-hover:active>button:hover {
     background-color: #106655;
 }
@@ -281,7 +285,6 @@ img {
     background-color: transparent;
     display: inline-block;
 }
-
 
 .social-button {
     width: 50px;
@@ -372,5 +375,4 @@ footer p {
 autor {
     color: #46bfa9;
     letter-spacing: -0.32px;
-
 }
