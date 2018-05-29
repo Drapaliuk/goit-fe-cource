@@ -66,6 +66,7 @@ main{
 }
 .services{
     padding-top: 24px;
+    margin-bottom: 24px;
 }
 h1 {
     text-align: center;
@@ -91,7 +92,7 @@ h1::after {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
-    margin-bottom: 24px;
+
 }
 
 .services-list-item p {
@@ -249,6 +250,7 @@ h1::after {
     font-weight: 300;
     font-style: italic;
     color: #999999;
+    margin-top: 0px;
 }
 
 .team-list-item h4 {
@@ -347,6 +349,7 @@ form {
     color: #333333;
     font-size: 14px;
     font-weight: 400;
+    max-width: 100%;
 }
 
 .autor-link{

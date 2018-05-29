@@ -44,6 +44,7 @@ body {
     text-transform: uppercase;
     margin: auto;
     text-align: center;
+    margin-bottom: 70px;
 }
 
 .main-header__button {
@@ -57,7 +58,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     margin: auto;
-    margin-top: 70px;
     outline: none;
     transition: all 500ms linear;
     cursor: pointer;
@@ -210,6 +210,7 @@ body {
 h1 {
     text-align: center;
     margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 h1::after {
@@ -220,7 +221,6 @@ h1::after {
     background-color: #F38181;
     margin: auto;
     margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 main {
@@ -320,16 +320,17 @@ main {
     text-align: center;
     font-size: 30px;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-.meat-our-team::after {
+.title-second-section::after {
     content: "";
     display: block;
     width: 60px;
     height: 3px;
     background-color: #F38181;
     margin: auto;
+    margin-top: 25px
 }
 
 .team-list {
@@ -494,6 +495,7 @@ form {
     color: #333333;
     font-size: 14px;
     font-weight: 400;
+    max-width: 100%;
 }
 
 .contacts-wrapper {

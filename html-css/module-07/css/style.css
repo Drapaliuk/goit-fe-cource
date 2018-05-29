@@ -154,17 +154,15 @@ h1 {
     width: 100%;
     min-height: 676px;
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-07/img7/map-image.png);
-    background-position-x: 40px;
+    background-position-x: 70%;
+    background-position-y: 65%;
     background-color: black;
-    background-size: 80%;
+    background-size: 33%;
     background-repeat: no-repeat;
-    background-position: right;
-    margin: auto;
     padding-top: 1px;
 }
 
 .form-wrapper {
-    min-height: 330px;
     max-width: 950px;
     margin: auto;
 }
@@ -205,14 +203,6 @@ h2 {
     display: block;
     margin-bottom: 30px;
 }
-
-/* .user-contacts-item:nth-child(:last-child){
-    margin-bottom: 
-}
-
-.user-contacts-item:not(:last-child) {
-    margin-bottom: 30px;
-} */
 
 .user-contacts input[type='name']:valid {
     outline: 3px solid green;
