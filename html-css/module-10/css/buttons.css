@@ -17,6 +17,9 @@
 .main-header-button:hover {
     background-color: #e19779;
 }
+.main-header-button:active{
+    transform: scale(0.98, 0.98)
+}
 .social-button {
     display: none;
     outline: none;

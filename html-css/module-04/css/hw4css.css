@@ -1,29 +1,35 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-img{
+
+img {
     max-width: 100%;
     height: auto;
 }
-.clearfix::after{
+
+.clearfix::after {
     display: table;
     clear: both;
     content: "";
 }
-.products-section{
+
+.products-section {
     margin-bottom: 70px;
 }
-.main-header{
+
+.main-header {
     margin-bottom: 90px;
     max-width: 100%;
 }
-nav{
+
+nav {
     max-width: 1373px;
     min-height: 59px;
     margin: auto;
 }
-.site-logo{
+
+.site-logo {
     float: left;
     text-decoration: none;
     text-transform: uppercase;
@@ -35,26 +41,30 @@ nav{
     font-family: 'Roboto', sans-serif;
     margin-top: 18px;
 }
-.site-logo::first-letter{
+
+.site-logo::first-letter {
     color: #1abc9c;
     font-weight: 400;
     letter-spacing: -0.6;
     font-family: 'Roboto', sans-serif;
 }
-.nav-list{
+
+.nav-list {
     list-style: none;
     float: right;
     min-height: 10px;
     padding: 0;
+}
 
+.nav-list-item:not(:last-child) {
+    margin-right: 20px;
 }
-.nav-list-item:not(:last-child){
-    margin-right: 20px;  
-}
-.nav-list-item{
+
+.nav-list-item {
     display: inline;
 }
-.nav-list-item a{
+
+.nav-list-item a {
     text-decoration: none;
     font-weight: 700px;
     color: #0f0101;
@@ -63,14 +73,17 @@ nav{
     line-height: 11px;
     font-family: 'Open Sans', sans-serif;
 }
-.nav-list-item a:hover{
+
+.nav-list-item a:hover {
     color: #1abc9c;
     letter-spacing: -0.28px;
 }
-main{
+
+main {
     max-width: 100%;
 }
-h1{
+
+h1 {
     font-size: 48px;
     font-weight: 400;
     line-height: 48px;
@@ -81,6 +94,7 @@ h1{
     text-align: center;
     font-family: 'Roboto - Black', sans-serif;
 }
+
 h1::after {
     content: "";
     display: block;
@@ -90,112 +104,82 @@ h1::after {
     margin: auto;
     margin-top: 30px;
 }
-.featured-list{
+
+.featured-list {
     max-width: 1163px;
     margin: auto;
     list-style: none;
     padding: 0px;
 }
-.featured-list-item{
+
+.featured-list-item {
     width: 255px;
     float: left;
     margin-right: 47px;
 }
-.featured-list-item:nth-child(4n+4){
+
+.featured-list-item:nth-child(4n+4) {
     margin-right: 0px;
 }
-.featured-list-item:nth-child(1){
+
+.featured-list-item:nth-child(1) {
     margin-bottom: 47px;
 }
-.featured-list-item:nth-child(2){
+
+.featured-list-item:nth-child(2) {
     margin-bottom: 47px;
 }
-.featured-list-item:nth-child(3){
+
+.featured-list-item:nth-child(3) {
     margin-bottom: 47px;
 }
-.featured-list-item:nth-child(4){
+
+.featured-list-item:nth-child(4) {
     margin-bottom: 47px;
 }
-.img{
+
+.img {
     display: block;
     width: 255px;
     height: 322px;
     background-color: #e9f0fd;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.img1{
+
+.img1 {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-04/img/product1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 322px;
-    background-color: #e9f0fd;
-    
 }
-.img2{
+
+.img2 {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-04/img/product2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 322px;
-    background-color: #e9f0fd;
 }
-.img3{
+
+.img3 {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-04/img/product9.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 322px;
-    background-color: #e9f0fd;
 }
-.img4{
+
+.img4 {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-04/img/product4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 322px;
-    background-color: #e9f0fd;
 }
-.img5{
+
+.img5 {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-04/img/product5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 322px;
-    background-color: #e9f0fd;
 }
-.img6{
+
+.img6 {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-04/img/product6.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 322px;
-    background-color: #e9f0fd;
 }
-.img7{
+
+.img7 {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-04/img/product3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 322px;
-    background-color: #e9f0fd;
 }
-.img8{
+
+.img8 {
     background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-04/img/product8.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 322px;
-    background-color: #e9f0fd;
 }
-.featured-list-item a{
+
+.featured-list-item a {
     width: 255px;
     height: 40px;
     background: linear-gradient( to right, #323232 80%, #8c8c8c 20%);
@@ -208,12 +192,14 @@ h1::after {
     letter-spacing: -0.36px;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Roboto - Black', sans-serif;    
+    font-family: 'Roboto - Black', sans-serif;
 }
-.featured-list-item a:hover{
-    background: linear-gradient( to right, #1abc9c 80%, #7fd9c7 20%);    
+
+.featured-list-item a:hover {
+    background: linear-gradient( to right, #1abc9c 80%, #7fd9c7 20%);
 }
-.name-stuff{
+
+.name-stuff {
     display: inline-block;
     height: 40px;
     width: 204px;
@@ -221,7 +207,8 @@ h1::after {
     box-sizing: border-box;
     padding-left: 10px;
 }
-.cost-stuff{
+
+.cost-stuff {
     float: right;
     width: 51px;
     height: 40px;
@@ -229,14 +216,17 @@ h1::after {
     padding-top: 5px;
     box-sizing: border-box;
 }
-.featured-list-item img{
+
+.featured-list-item img {
     display: block;
 }
-.latest-news{
+
+.latest-news {
     max-width: 1200px;
     margin: auto;
 }
-.latest-news-title{
+
+.latest-news-title {
     text-align: center;
     color: #555252;
     font-size: 48px;
@@ -246,7 +236,8 @@ h1::after {
     font-family: 'Roboto -Black', sans-serif;
     margin-top: 0px;
 }
-.latest-news-title::after{
+
+.latest-news-title::after {
     width: 164px;
     height: 7px;
     background-color: #4ec6ab;
@@ -255,51 +246,61 @@ h1::after {
     content: "";
     margin-top: 30px;
 }
-article{
+
+article {
     max-width: 1200px;
     min-height: 649px;
     margin: auto;
 }
-.latest-news-list{
+
+.latest-news-list {
     list-style: none;
     max-width: 1200px;
     padding: 0;
-    margin-top:0px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
-.latest-news-list-item{
+
+.latest-news-list-item {
     max-width: 350px;
     min-height: 496px;
 }
-.latest-news-list-item:nth-child(1){
+
+.latest-news-list-item:nth-child(1) {
     float: left;
     margin-right: 75px;
 }
-.latest-news-list-item:nth-child(2){
+
+.latest-news-list-item:nth-child(2) {
     float: left;
     margin-right: 75px;
 }
-.latest-news-list-item:nth-child(3){
+
+.latest-news-list-item:nth-child(3) {
     float: left;
 }
-.latest-news-list-item img{
+
+.latest-news-list-item img {
     display: block;
 }
-.latest-news-list-item h3{
+
+.latest-news-list-item h3 {
     color: #555252;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.36px;
     font-family: 'Open Sans-semibold', sans-serif;
 }
-.latest-news-list-item h3::after{
+
+.latest-news-list-item h3::after {
     content: "";
     display: block;
     max-width: 135px;
     height: 3px;
     background-color: #4ec6ab;
 }
-.latest-news-list-item p{
+
+.latest-news-list-item p {
     color: #555252;
     font-size: 14px;
     font-weight: 400;
@@ -307,7 +308,8 @@ article{
     font-family: 'Open Sans', sans-serif;
     max-width: inherit;
 }
-.latest-news-list-item button{
+
+.latest-news-list-item button {
     max-width: 159px;
     height: 51px;
     border: none;
@@ -321,4 +323,4 @@ article{
     font-family: 'Open Sans', sans-serif;
     outline: none;
     cursor: pointer;
-} 
+}
