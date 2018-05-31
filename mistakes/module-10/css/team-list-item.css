@@ -39,6 +39,8 @@
     transition: all 150ms linear;
 }
 
+
+
 .team-list-item__img-wrapper:hover::before {
     background: linear-gradient(#ed8889, #f4ad8e, #fce38a);
 }
@@ -53,8 +55,6 @@
     border: none;
     transition: all 180ms linear;
 }
-
-
 
 .team-list-item__img-wrapper>button>svg {
     transition: all 300ms linear;
@@ -75,10 +75,12 @@
 .team-list-item__img-wrapper:hover {
     transform: translate(-15px, -15px);
 }
+
 .team-list-item__teammate-name {
     color: #333333;
     text-align: center;
 }
+
 .team-list-item__teammate-position {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -86,6 +88,7 @@
     color: #999999;
     text-align: center;
 }
+
 .team-list-item:not(:last-child) {
     margin-right: 30px;
 }
