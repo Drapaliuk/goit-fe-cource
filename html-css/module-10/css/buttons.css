@@ -1,4 +1,4 @@
-.main-header-button {
+.header-button {
     display: block;
     width: 160px;
     min-height: 40px;
@@ -14,10 +14,10 @@
     cursor: pointer;
 }
 
-.main-header-button:hover {
+.header-button:hover {
     background-color: #e19779;
 }
-.main-header-button:active{
+.header-button:active{
     transform: scale(0.98, 0.98)
 }
 .social-button {
