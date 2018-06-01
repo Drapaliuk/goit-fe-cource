@@ -3,6 +3,13 @@
     margin: auto;
     padding-top: 30px;
 }
+
+.services-title {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
 .services__text {
     font-weight: 400;
     font-size: 24px;
