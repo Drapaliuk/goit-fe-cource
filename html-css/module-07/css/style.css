@@ -253,20 +253,16 @@ main {
     box-sizing: border-box;
 }
 
-input:required:valid {
+.user-name:valid {
     outline: 3px solid green;
 }
 
-input:required:invalid {
-    outline: 1px solid red;
-}
-
-textarea:required:valid {
+.user-email:valid {
     outline: 3px solid green;
 }
 
-textarea:required:invalid {
-    outline: 1px solid red;
+textarea:valid {
+    outline: 3px solid green;
 }
 
 .subject {
