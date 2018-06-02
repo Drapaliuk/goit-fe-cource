@@ -253,10 +253,20 @@ h2 {
     box-sizing: border-box;
 }
 
-
-
-.user-contacts input[type='email']:valid {
+input:required:valid {
     outline: 3px solid green;
+}
+
+input:required:invalid {
+    outline: 1px solid red;
+}
+
+textarea:required:valid{
+    outline: 3px solid green;
+}
+
+textarea:required:invalid{
+    outline: 1px solid red;
 }
 
 .subject {
@@ -275,14 +285,6 @@ h2 {
     padding: 10px;
     box-sizing: border-box;
     border: none;
-}
-
-.message:valid {
-    outline: 3px solid green;
-}
-
-.user-name input:valid {
-    outline: 3px solid green;
 }
 
 .send {
