@@ -261,11 +261,11 @@ input:required:invalid {
     outline: 1px solid red;
 }
 
-textarea:required:valid{
+textarea:required:valid {
     outline: 3px solid green;
 }
 
-textarea:required:invalid{
+textarea:required:invalid {
     outline: 1px solid red;
 }
 
