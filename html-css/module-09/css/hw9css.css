@@ -22,7 +22,9 @@ h2 {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
-
+.header>.container>.row>[class*=col-]>a:not(:last-child){
+    margin-right:30px;
+}
 .header>.container>.row>[class*=col-]>a:hover {
     color: #ff4e50;
 }
@@ -34,6 +36,16 @@ h2 {
 
 .header .container .row>[class*=col-] {
     text-align: center;
+    margin-bottom: 40px;
+}
+.header>.container>.row{
+    padding-top: 30px;
+}
+.header>.container>.row>a:nth-child(1){
+    font-size: 20px;
+}
+.logo{
+    font-size: 20px;
 }
 
 .main>.container {

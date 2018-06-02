@@ -4,7 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
+.header {
     max-width: 100%;
     min-height: 37px;
     margin: auto;
@@ -17,7 +17,7 @@ header {
     text-decoration: none;
 }
 
-.main-nav {
+.nav {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -68,7 +68,7 @@ main{
     padding-top: 24px;
     margin-bottom: 24px;
 }
-h1 {
+.services-title {
     text-align: center;
     margin-top: 0;
     margin-bottom: 25px;
