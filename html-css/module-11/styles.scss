@@ -1,0 +1,33 @@
+%typical-button-rules {
+    outline: none;
+    cursor: pointer;
+    display: block;
+}
+
+%after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;
+    margin: auto;
+    margin-top: 25px;
+}
+
+@import 'variables';
+@import 'placeholders.scss';
+@import 'mixins';
+@import 'header';
+@import 'button.scss';
+@import 'common';
+@import 'cloak';
+@import 'nav';
+@import 'services';
+@import 'services-list';
+@import 'services-list-item';
+@import 'team-list';
+@import 'team-section';
+@import 'team-list-item';
+@import 'page-footers';
+@import 'footer-form';
+@import 'contact-wrapper';

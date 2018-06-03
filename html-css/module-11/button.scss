@@ -1,0 +1,66 @@
+.header-button {
+    @extend%typical-button-rules;
+    width: 160px;
+    min-height: 40px;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+    transition: all 500ms linear;
+    
+    &:hover {
+        background-color: #e19779;
+    }
+    &:active {
+        transform: scale(0.98, 0.98)
+    }
+}
+
+
+.social-button {
+    display: none;
+ 
+    top: 207px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-button>svg {
+    width: 30px;
+    height: 30px;
+    fill: #e88283;
+}
+
+.social-button--facebook {
+    left: 70px;
+}
+
+.social-button--twitter {
+    left: 131px;
+}
+
+.social-button--pinterest {
+    left: 192px;
+}
+
+.social-button--instagram {
+    left: 253px;
+}
+
+.footer-button-submit {
+    @extend%typical-button-rules;
+    width: 150px;
+    height: 40px;
+    background-color: #95E1D3;
+    margin-left: 0;
+    border: none;
+    border: 1px solid #95E1D3;
+    box-sizing: content-box;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+}

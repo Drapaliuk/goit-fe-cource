@@ -1,0 +1,55 @@
+.services-list-item {
+    width: 330px;
+    list-style: none;
+}
+
+.services-list-item__link {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333333;
+    margin: 0;
+    &::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-right: 40px;
+    }
+}
+
+.services-list-item__text {
+    font-size: 15px;
+    width: 250px;
+    color: #999999;
+    margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services-list-item__link::before {}
+
+.services-list-item__link--icon-photography::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img6/alarm.png);
+}
+
+.services-list-item__link--icon-design::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img6/line-graph.png);
+}
+
+.services-list-item__link--icon-creativity::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img6/computer.png);
+}
+
+.services-list-item__link--icon-seo::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img6/book.png);
+}
+
+.services-list-item__link--icon-css::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img6/home.png);
+}
+
+.services-list-item__link--icon-digital::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img6/image.png);
+}

@@ -1,0 +1,30 @@
+.header {
+    max-width: 100%;
+    min-height: 1000px;
+    margin: auto;
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-10/img/eagle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header__text {
+    color: #ffffff;
+    font-family: "Kaushan Script";
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.header__title {
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+}

@@ -1,0 +1,14 @@
+.cloak {
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    transition: all 3s linear;
+    background: linear-gradient(#e88283, #fce38a);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.cloak:hover {
+    background: linear-gradient(#e88283, #ed8889, #f4ad8e, #fce38a);
+}
