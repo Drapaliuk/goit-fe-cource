@@ -1,9 +1,0 @@
-.team-list {
-    max-width: 100%;
-    margin: auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-}
