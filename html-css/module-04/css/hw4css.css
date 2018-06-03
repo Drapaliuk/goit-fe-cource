@@ -83,7 +83,7 @@ main {
     max-width: 100%;
 }
 
-h1 {
+.products-section-title {
     font-size: 48px;
     font-weight: 400;
     line-height: 48px;
@@ -263,7 +263,6 @@ article {
 
 .latest-news-list-item {
     max-width: 350px;
-    min-height: 496px;
 }
 
 .latest-news-list-item:nth-child(1) {
@@ -306,7 +305,7 @@ article {
     font-weight: 400;
     letter-spacing: -0.36px;
     font-family: 'Open Sans', sans-serif;
-    max-width: inherit;
+    margin-top: 0px;
 }
 
 .latest-news-list-item button {
