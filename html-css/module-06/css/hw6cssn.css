@@ -61,13 +61,16 @@ body {
     margin-top: 0;
     font-family: 'Kaushan Script', cursive;
 }
-main{
+
+main {
     max-width: 100%;
 }
-.services{
+
+.services {
     padding-top: 24px;
     margin-bottom: 24px;
 }
+
 .services-title {
     text-align: center;
     margin-top: 0;
@@ -82,7 +85,6 @@ h1::after {
     background-color: #F38181;
     margin: auto;
     margin-top: 25px;
-
 }
 
 .services-list {
@@ -92,7 +94,6 @@ h1::after {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
-
 }
 
 .services-list-item p {
@@ -300,7 +301,10 @@ p {
     text-align: center;
 }
 
-footer {
+.page-footer {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
     max-width: 100%;
     min-height: 51px;
     margin: auto;
@@ -345,14 +349,9 @@ form {
     font-size: 14px;
 }
 
-.page-footer {
-    color: #333333;
-    font-size: 14px;
-    font-weight: 400;
-    max-width: 100%;
 }
 
-.autor-link{
+.autor-link {
     color: #f38181;
     text-decoration: none;
 }

@@ -51,7 +51,7 @@ body {
     src: local('Dancing Script Regular'), local('DancingScript-Regular'), url('../fonts/dancing-script-v9-latin-regular.woff2') format('woff2'), url('../fonts/dancing-script-v9-latin-regular.woff') format('woff'),
 }
 
-header {
+.page-header {
     max-width: 100%;
     min-height: 50px;
     margin: auto;
