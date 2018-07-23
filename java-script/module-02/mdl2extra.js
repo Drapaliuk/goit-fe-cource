@@ -11,16 +11,13 @@ do{
     numbers.push(userInput)
 }while (userInput != 0);
 
-for(let key in numbers){
-    total += numbers[key];
+for(let key of numbers){
+    total += key;
 }
 
-if(numbers.length > 1){
+if(numbers.length > 0){
   alert(`Загальна сума дорівнює ${total}` );
 }
-
-
-
 
 
 
@@ -33,7 +30,7 @@ do{
     if(ques === null){
         break
     }
-    for(var value of password)
+    for(let value of password)
     if(ques === value){
         alert('Ласкаво просимо!')
         break
