@@ -18,6 +18,3 @@ for(let key of numbers){
 if(numbers.length > 0){
   alert(`Загальна сума дорівнює ${total}` );
 }
-
-
-console.log(1)
