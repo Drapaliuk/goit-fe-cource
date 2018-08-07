@@ -25,4 +25,4 @@ const addLogin = function(logins){
 }
 
 
-const y = addLogin(logins)
+addLogin(logins)
