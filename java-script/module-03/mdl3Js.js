@@ -9,7 +9,7 @@ const isLoginUnique = function(usersLogin, arreyLogin){
         return revisio 
 }
 
-const addLogin = function(logins){
+const registers = function(logins){
     const login = prompt("Введіть логін")
     const valid = isLoginValid(login)
     if(!valid){
@@ -25,4 +25,4 @@ const addLogin = function(logins){
 }
 
 
-addLogin(logins)
+registers(logins)
