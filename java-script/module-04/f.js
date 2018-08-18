@@ -46,6 +46,6 @@ const change = function(buyerMoney, totalPrice){
     const change = buyerMoney - totalPrice
     if(change > -1){
         return alert(`Вітаємо з покупкою, ваша решта становить ${change} гривень`)
-    }else return alert("У вас недостатньо коштів!")
+    }else return alert(`У вас недостатньо коштів! Не вистачає ${change} гривень`)
 }
 change(burMon, total)
