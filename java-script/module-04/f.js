@@ -1,9 +1,9 @@
 const autoFillingIn = function(){
-    const bread = Number(prompt('Bread'))
-    const milk = Number(prompt('Milk'))
-    const apples = Number(prompt('Apples'))
-    const chicken = Number(prompt('Chicken'))
-    const cheese = Number(prompt('Cheese'))
+    const bread = Number(prompt('Bread (cost 10$)'));
+    const milk = Number(prompt('Milk (cost 15$)'));
+    const apples = Number(prompt('Apples (cost 20$)'));
+    const chicken = Number(prompt('Chicken (cost 50$)'));
+    const cheese = Number(prompt('Cheese (cost 40$)'));
     const order = {
         bread: bread,
         milk: milk,
@@ -11,7 +11,7 @@ const autoFillingIn = function(){
         cheese: cheese,
         chicken: chicken,
     }
-    console.log(order)
+    console.log(order);
     return order
 }
 const order = autoFillingIn()
