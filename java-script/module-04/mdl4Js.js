@@ -49,7 +49,7 @@ function Cashier(name, productsDatabase) {
 
 
 const order = {
-  bread: 2,
+  bread: 1777,
   milk: 2,
   apples: 1,
   cheese: 3
