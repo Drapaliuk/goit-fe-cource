@@ -48,9 +48,7 @@ btn.textContent = 'read more'
 btn.classList.add('button')
 btn.setAttribute('src', link)
 
-wrapper.appendChild(imga)
-wrapper.appendChild(titles)
-wrapper.appendChild(wrapper.appendChild(btn))
+wrapper.append(imga, titles,text, btn)
 
 return wrapper
 
@@ -58,9 +56,10 @@ return wrapper
 
 const createCards = function(posts, callback){
     const arr = []
-    for(let i = 0; i < posts.length; i++){   
-        arr.push(callback(posts[i]))
-    }
+   
+    posts.forEach(element => {
+      arr.push(callback(element))
+    });
     return arr
 
 }
@@ -70,5 +69,3 @@ const createCards = function(posts, callback){
 const ex = createCards(posts, functionForArticle)
 
 DOMelem.append(...ex)
-
-

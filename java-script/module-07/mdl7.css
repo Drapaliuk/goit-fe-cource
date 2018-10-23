@@ -37,7 +37,8 @@ body {
   
   .button {
     position: relative;
-    display: inline-block;
+    width: 100px;
+    display: block;
     border: none;
     border-radius: 3px;
     padding: 0 1.5em;
