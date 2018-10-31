@@ -1,22 +1,21 @@
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 const isLoginValid = function(login){
-    const logLen = login.length > 4 && login.length < 16;
-    return logLen
+    return login.length > 4 && login.length < 16;
+    
 }
 
 const isLoginUnique = function(usersLogin, arreyLogin){
-        const revisio = arreyLogin.includes(usersLogin);
-        return revisio 
+        return arreyLogin.includes(usersLogin);
 }
 
 const registers = function(logins){
     const login = prompt("Введіть логін")
-    const valid = isLoginValid(login)
-    if(!valid){
+    
+    if(!isLoginValid(login)){
         return alert("Помилка! Логін повинен бути від 4 до 16 символів")
     }
-    const unique = isLoginUnique(login, logins)
-    if(!unique){
+    
+    if(!isLoginUnique(login, logins)){
     logins.push(login)
     return alert("Логін успішно додано!")
     }else
@@ -26,3 +25,4 @@ const registers = function(logins){
 
 
 registers(logins)
+console.log(logins)
