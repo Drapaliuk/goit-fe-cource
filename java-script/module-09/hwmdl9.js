@@ -13,7 +13,7 @@ let milliseconds;
 let deltaTime;
 
 class Timer{
-        constructor({ onTick = () => null, creator, removerAttributes, setterAttributes}){
+        constructor({ onTick = () => null, creator, removerAttributes, setterAttributes, forDel}){
                 this.startTime = null;
                 this.deltaTime = null;
                 this.timerId = null;
@@ -24,6 +24,7 @@ class Timer{
                 this.remover = removerAttributes;
                 this.setterAttributes = setterAttributes;
                 this.creator = creator;
+                this.forDel = forDel;
         }
 
         start(){
@@ -82,10 +83,11 @@ class Timer{
                 this.onTick({
                         min: '00',
                         sec: '00',
-                        ms: '0',
+                        ms: '00',
                 })
                 this.great = null
                 setterAttributes()
+                forDel()
         }
         // Octal literals are not allowed in strict mode. ????
 }
@@ -98,7 +100,7 @@ function updateJsTime({min, sec, ms}){
 
 function creator(lap){
         const li = document.createElement('li')
-        li.textContent = lap
+        li.textContent = `${lap} ms`
         jsLeps.appendChild(li)
 
 }
@@ -109,6 +111,14 @@ function removerAttributes(){
 
 function setterAttributes(){
         reset.setAttribute('disabled', '')
+}
+
+function forDel(){
+        const lapsResult = Array.from(jsLeps.children)
+        lapsResult.forEach(element => {
+                element.remove()
+        });
+
 }
 
 const timer = new Timer({
