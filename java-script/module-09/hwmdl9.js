@@ -6,7 +6,7 @@ const jsLeps = document.querySelector('.js-laps')
 reset.setAttribute('disabled', '')
 
 const timeCounter = 0;
-let startTime = Date.now()
+let startTime = Date.now();
 let seconds;
 let minutes;
 let milliseconds;
@@ -20,6 +20,7 @@ class Timer{
                 this.label = false;
                 this.onTick = onTick;
                 this.currentTime = null;
+                this.great = null;
                 this.savedTime = null;
                 this.remover = removerAttributes;
                 this.setterAttributes = setterAttributes;
@@ -39,7 +40,7 @@ class Timer{
                                 this.currentTime = Date.now()
                                 
                                 this.deltaTime = this.currentTime - this.startTime;
-                                
+
                                 let newDelta = this.currentTime + this.savedTime
                                 
                                 this.deltaTime = newDelta - this.startTime     
@@ -81,13 +82,15 @@ class Timer{
                 btnStart.textContent = "start"
                 this.label = false
                 this.onTick({
-                        min: '00',
-                        sec: '00',
+                        min: '0',
+                        sec: '0',
                         ms: '00',
                 })
-                this.great = null
+                this.savedTime = null
                 setterAttributes()
                 forDel()
+                this.deltaTime = null
+
         }
         // Octal literals are not allowed in strict mode. ????
 }
@@ -95,12 +98,29 @@ class Timer{
 
 
 function updateJsTime({min, sec, ms}){
-        jsTime.textContent = `${min}:${sec}:${ms}`
+        if (sec < 10 && min < 10) {
+                jsTime.textContent = `${'0' + min}:${'0' + sec}:${ms}`;
+              } else if (sec < 10 && min >= 10) {
+                jsTime.textContent = `${min}:${'0' + sec}:${ms}`;  
+
+              } else if (sec >= 10 && min < 10) {
+                jsTime.textContent = `${'0' + min}:${sec}:${ms}`;                  
+              }
+
 }
 
 function creator(lap){
         const li = document.createElement('li')
-        li.textContent = `${lap} ms`
+        const time = new Date(lap)
+        const creatorSec = time.getSeconds()
+        const creatorMs = time.getMilliseconds()
+        const creatorMin = time.getMinutes()
+
+
+
+
+
+        li.textContent = `${creatorMin} min ${creatorSec} sec ${creatorMs} ms`
         jsLeps.appendChild(li)
 
 }
@@ -130,4 +150,10 @@ const timer = new Timer({
 btnStart.addEventListener('click', timer.start.bind(timer))
 btnStop.addEventListener('click', timer.lap.bind(timer))
 reset.addEventListener('click', timer.reset.bind(timer))
+
+
+
+
+
+
 
