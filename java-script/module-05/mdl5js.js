@@ -99,11 +99,8 @@ console.log("")
 console.log('#1 Імена всіх користувачів   ============================================================================')                           
 
   const getAllNames = function(users){
-    users.forEach(element => {
-      // return (element['name']) ????????
-      const allNames = element['name']
-      return console.log(allNames)
-    });
+    const usersName = users.reduce((acc, value) => acc.concat(value.name), [])
+    return usersName
   }
   
   console.log(getAllNames(users)); 
@@ -117,13 +114,12 @@ console.log('#1 Імена всіх користувачів   =================
   console.log('#2 Колір очей  ============================================================================')                           
 
 
-  const getUsersByEyeColor = (arr, color) => {
+  const getUsersByEyeColor = (users, userEyeColor) => {
   
-    return arr.filter(i => i.eyeColor === color);
+    return users.filter(i => i.eyeColor === userEyeColor);
   
   }
   
-  console.log(getUsersByEyeColor(users, 'blue'))
   console.log(getUsersByEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
   
 
@@ -135,8 +131,10 @@ console.log('#1 Імена всіх користувачів   =================
   console.log('#3 Імена користувачів відповідно статі   ============================================================================')                           
 
 
-  const getUsersByGender = (arr, gender) => {
-      return arr.filter(z => z.gender === gender)
+  const getUsersByGender = (users, gender) => {
+        const genderArr = [];
+       users.filter(z => z.gender === gender).forEach(i => genderArr.push(i.name))
+      return genderArr
   }
   console.log(getUsersByGender(users, 'female')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
   
@@ -159,7 +157,7 @@ console.log('#1 Імена всіх користувачів   =================
   //  * Получить пользоваля (не массив) по email (поле email, он уникальный)
   // //  */
   console.log("")
-  console.log('#5 Знайдено за email` ом ============================================================================')                           
+  console.log('#5 Знайдено за email`ом ============================================================================')                           
 
   const getUserByEmail = (arr, email) => {
     return arr.find(z => z.email === email)
@@ -223,11 +221,11 @@ console.log('#1 Імена всіх користувачів   =================
 //         console.log(element.friends)
 //       }
 //      console.log(newArr)
+
+// ТИ НАПИСАВ "НЕ НАДО ПИСАТЬ ТАК", ЯК "ТАК"?????????
+
+
 };
-  
-  
-  
-  
-  
-  console.log(getUsersByFriend(users, 'Padilla Garrison')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
-  console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
+
+console.log(getUsersByFriend(users, 'Padilla Garrison')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
