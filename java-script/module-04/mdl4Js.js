@@ -13,58 +13,60 @@ function Cashier(name, productsDatabase) {
   this.customerMoney = 0,
   this.changeAmount = 0,   
   this.onSuccess = function() {
-    console.log(`Дякуємо за покупку, ваша решта ${this.changeAmount} гривень`);
+    console.log(`Дякуємо за покупку, ваша решта ${this.changeAmount}`);
   }
   this.onError = function() {
     console.log('Вибачте, увас недостатнього коштів!');
   }
 
   this.countTotalPrice = function(order) {
-      const orderArr = Object.entries(order);
+      // const orderArr = Object.;
+      // for (const item of orderArr) {
+      //   const amount = item[1];
+      //   console.log(item)
+      //   const price = productsDatabase[item [0]]
+      //   console.log(price)
+      //   this.totalPrice += amount * price;
+      // }
 
-      for (const item of orderArr) {
-        const amount = item[1];
-        const price = productsDatabase[item [0]]
-        this.totalPrice += amount * price;
+      
+      for (const key in order){
+        this.totalPrice += order[key] * productsDatabase[key]
       }
+      
+      // Стосовно спрощення, ти це мав на увазі?
+
     }
   this.getCustomerMoney = function(value) {
     this.customerMoney = value;
   }
   this.countChange = function() {
-    const client = this.customerMoney;
-    const total = this.totalPrice;
-    if (total > client) return null;
+
+
+    if (this.totalPrice > this.customerMoney) return null;
     
-    const change = client - total;
-    this.changeAmount = change;
-    return change;
+    this.changeAmount = this.customerMoney - this.totalPrice;
+    return this.changeAmount
   }
+  
   this.reset = function() {
-    this.totalPrice = 0;
     this.customerMoney = 0;
-    this.changeAmount = 0;
   }
 }
 
 
 const order = {
-  bread: 1777,
+  bread: 1,
   milk: 2,
   apples: 1,
-  cheese: 3
+  cheese: 3,
 };
 
 const Jack = new Cashier('Jack', products); 
-console.log("Перевірка параметрів")
 console.log("Ім'я касира: ", Jack.name);
-console.log(Jack.productsDatabase);
-console.log(Jack.totalPrice);
-console.log(Jack.customerMoney);
-console.log(Jack.changeAmount);
-console.log("")
+console.log('Асортимент: ', Jack.productsDatabase);
+console.log('Кошти покупця: ', Jack.customerMoney);
 
-console.log("Оформлення замовлення")
 
 Jack.countTotalPrice(order);
 console.log("Загальна сума замовлення: ", Jack.totalPrice);
@@ -81,10 +83,5 @@ if(changeResult !== null) {
   Jack.onError();
 }
 
-console.log("")
-
-console.log('Reset')
 Jack.reset();
-console.log("Загальна сума замовлення: ", Jack.totalPrice);
 console.log("Кошти покупця: ", Jack.customerMoney);
-console.log("Решта: ", Jack.changeAmount);
