@@ -33,11 +33,11 @@ const getUsersById = (id) => {
 
 
 
-const addUser = (name, age) => {
+const addUser = (name, username) => {
   if(name === '' || username === '') return alert("Заповніть поля name і username!")    
   fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',
-      body: JSON.stringify({name, age}),
+      body: JSON.stringify({name, username}),
       headers: {
         "Content-type": "application/json; charset=UTF-8"
       }
