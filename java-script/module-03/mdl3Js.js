@@ -1,10 +1,10 @@
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-const isLoginValid = function(login){
+const isLoginValid = (login) => {
     return login.length > 4 && login.length < 16;
     
 }
 
-const isLoginUnique = function(usersLogin, arreyLogin){
+const isLoginUnique = (usersLogin, arreyLogin) => {
         return arreyLogin.includes(usersLogin);
 }
 
@@ -25,4 +25,3 @@ const registers = function(logins){
 
 
 registers(logins)
-console.log(logins)

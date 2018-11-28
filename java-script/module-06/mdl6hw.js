@@ -1,4 +1,5 @@
 'use strict'
+
 class Hamburger {
     constructor(size, stuffings){
     this._size = size;
@@ -8,18 +9,20 @@ class Hamburger {
     
 
     addTopping(...toppings){
-      toppings.forEach(element => {
-          this._toppings.push(element)
-          if(this._toppings[element] < 0){}
-      });     
+      for(let i = 0; i < toppings.length; i++){
+        const revisio = this._toppings.includes(toppings[i])
+
+        if(revisio){
+          continue
+        }
+        this._toppings.push(toppings[i])
+      }
     }
 
 
-    removeTopping(...toppings) { // Possible to delete multiple toppings
-      toppings.forEach (elem => {
-        const toDel = this._toppings.findIndex(top => top === elem);
-        this._toppings.splice(toDel, 1);
-      })
+    removeTopping(topping) {
+        const index = this._toppings.indexOf(topping)
+        this._toppings.splice(index, 1);
     }
 
     get getToppings(){
@@ -36,21 +39,12 @@ class Hamburger {
 
 
     calculatePrice(){
-      let result = 0
-      result += Hamburger.SIZES[this._size].price
-      result += Hamburger.STUFFINGS[this._stuffing].price
-      result += this._toppings.reduce((accum, elem) => accum + Hamburger.TOPPINGS[elem].price, 0);
-      
-      return result
+      return Hamburger.SIZES[this._size].price + Hamburger.STUFFINGS[this._stuffing].price + this._toppings.reduce((accum, elem) => accum + Hamburger.TOPPINGS[elem].price, 0)      
     
     }
     
     calculateCalories(){
-      let result = 0
-      result += Hamburger.SIZES[this._size].calories
-      result += Hamburger.STUFFINGS[this._stuffing].calories
-      result += this._toppings.reduce((accum, elem) => accum + Hamburger.TOPPINGS[elem].calories, 0);
-      return result
+      return Hamburger.SIZES[this._size].calories + Hamburger.STUFFINGS[this._stuffing].calories + this._toppings.reduce((accum, elem) => accum + Hamburger.TOPPINGS[elem].calories, 0)      
     }
     
 
@@ -141,7 +135,7 @@ console.log("Price with sauce: ", hamburger.calculatePrice());
 console.log("Is hamburger large: ", hamburger.getSize === Hamburger.SIZE_LARGE); // -> false
 
 // Убрать добавку
-hamburger.removeTopping(Hamburger.TOPPING_SPICE);
+hamburger.removeTopping(Hamburger.TOPPING_SAUCE);
 
 // Смотрим сколько добавок
 console.log("Hamburger has %d toppings", hamburger.getToppings.length); // 1

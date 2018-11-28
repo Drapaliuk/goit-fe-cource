@@ -9,8 +9,6 @@ do{
         continue
     }
     
-    if(userInput === null) break
-
     numbers.push(Number(userInput))
 }while (userInput !== null);
 
@@ -22,4 +20,3 @@ if(numbers.length > 0){
     }
   alert(`Загальна сума дорівнює ${total}` );
 }
-

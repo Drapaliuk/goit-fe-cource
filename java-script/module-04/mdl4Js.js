@@ -9,9 +9,9 @@ const products = {
 function Cashier(name, productsDatabase) {
   this.name = name,
   this.productsDatabase = productsDatabase,
-  this.totalPrice = 0,
+  // this.totalPrice = 0,
   this.customerMoney = 0,
-  this.changeAmount = 0,   
+  // this.changeAmount = 0,   
   this.onSuccess = function() {
     console.log(`Дякуємо за покупку, ваша решта ${this.changeAmount}`);
   }
@@ -20,35 +20,26 @@ function Cashier(name, productsDatabase) {
   }
 
   this.countTotalPrice = function(order) {
-      // const orderArr = Object.;
-      // for (const item of orderArr) {
-      //   const amount = item[1];
-      //   console.log(item)
-      //   const price = productsDatabase[item [0]]
-      //   console.log(price)
-      //   this.totalPrice += amount * price;
-      // }
-
-      
+      let result = 0   
       for (const key in order){
-        this.totalPrice += order[key] * productsDatabase[key]
+        result += order[key] * productsDatabase[key]
       }
-      
-      // Стосовно спрощення, ти це мав на увазі?
-
+      return result
     }
+
   this.getCustomerMoney = function(value) {
     this.customerMoney = value;
   }
   this.countChange = function() {
+    if (this.countTotalPrice() > this.customerMoney) return null;
 
+    return this.customerMoney - this.countTotalPrice()
 
-    if (this.totalPrice > this.customerMoney) return null;
-    
-    this.changeAmount = this.customerMoney - this.totalPrice;
-    return this.changeAmount
   }
   
+  // я замінив this.totalPrice на визов метода, ніічого не працює і я не розумію навіщо це заміняти
+  // і як це пофіксити, пояснм мені будь ласка
+
   this.reset = function() {
     this.customerMoney = 0;
   }
@@ -56,7 +47,7 @@ function Cashier(name, productsDatabase) {
 
 
 const order = {
-  bread: 1,
+  bread: 12,
   milk: 2,
   apples: 1,
   cheese: 3,
@@ -68,8 +59,8 @@ console.log('Асортимент: ', Jack.productsDatabase);
 console.log('Кошти покупця: ', Jack.customerMoney);
 
 
-Jack.countTotalPrice(order);
-console.log("Загальна сума замовлення: ", Jack.totalPrice);
+
+console.log("Загальна сума замовлення: ", Jack.countTotalPrice(order))
 
 Jack.getCustomerMoney(500);
 console.log("Кошти покупця: ", Jack.customerMoney);

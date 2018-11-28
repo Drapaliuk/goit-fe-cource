@@ -95,12 +95,9 @@ const users = [
   
 //    * Получить массив имен (поле name) всех пользователей
 //    */
-console.log("")
-console.log('#1 Імена всіх користувачів   ============================================================================')                           
 
-  const getAllNames = function(users){
-    const usersName = users.reduce((acc, value) => acc.concat(value.name), [])
-    return usersName
+  const getAllNames = users => {
+   return users.reduce((acc, value) => acc.concat(value.name), [])
   }
   
   console.log(getAllNames(users)); 
@@ -110,13 +107,11 @@ console.log('#1 Імена всіх користувачів   =================
   // /**
   //  * Получить массив объектов пользователей по цвету глаз (поле eyeColor)
   //  */
-  console.log("")
-  console.log('#2 Колір очей  ============================================================================')                           
 
 
   const getUsersByEyeColor = (users, userEyeColor) => {
   
-    return users.filter(i => i.eyeColor === userEyeColor);
+    return users.filter(user => user.eyeColor === userEyeColor);
   
   }
   
@@ -127,26 +122,20 @@ console.log('#1 Імена всіх користувачів   =================
   // /**
   //  * Получить массив имен пользователей по полу (поле gender)
   //  */
-  console.log("")
-  console.log('#3 Імена користувачів відповідно статі   ============================================================================')                           
 
 
   const getUsersByGender = (users, gender) => {
-        const genderArr = [];
-       users.filter(z => z.gender === gender).forEach(i => genderArr.push(i.name))
-      return genderArr
+       return users.filter(user => user.gender === gender)
   }
-  console.log(getUsersByGender(users, 'female')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+  console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
   
   
   // /**
   //  * Получить массив только неактивных пользователей (поле isActive)
   //  */
-  console.log("")
-  console.log('#4 Неактивні користувачі ============================================================================')                           
 
   const getInactiveUsers = arr => {
-    return arr.filter(y => y.isActive === false)
+    return arr.filter(user => user.isActive === false)
   };
   
   console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
@@ -156,11 +145,9 @@ console.log('#1 Імена всіх користувачів   =================
   // /**
   //  * Получить пользоваля (не массив) по email (поле email, он уникальный)
   // //  */
-  console.log("")
-  console.log('#5 Знайдено за email`ом ============================================================================')                           
 
   const getUserByEmail = (arr, email) => {
-    return arr.find(z => z.email === email)
+    return arr.find(user => user.email === email)
   };
   
   console.log(getUserByEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
@@ -172,12 +159,10 @@ console.log('#1 Імена всіх користувачів   =================
   // /**
   //  * Получить массив пользователей попадающих в возрастную категорию от min до max лет (поле age)
   //  */
-  console.log("")
-  console.log('#6 За віковою категорією ============================================================================')                           
 
 
   const getUsersWithAge = (arr, min, max) => {
-    return arr.filter(d => d.age > min && d.age < max);
+    return arr.filter(user => user.age > min && user.age < max);
   };
   
   console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
@@ -189,11 +174,9 @@ console.log('#1 Імена всіх користувачів   =================
   // /**
   //  * Получить общую сумму баланса (поле balance) всех пользователей
   //  */
-  console.log("")
-  console.log('#7 Загальний баланс користувачів ============================================================================')                           
 
   const getTotalBalance = arr => {
-      return arr.reduce((acc, z) => acc + z.balance, 0)
+      return arr.reduce((acc, user) => acc + user.balance, 0)
   };
   
   console.log(getTotalBalance(users)); // 20916
@@ -205,25 +188,9 @@ console.log('#1 Імена всіх користувачів   =================
   // /**
   //  * Массив имен всех пользователей у которых есть друг с указанным именем
   //  */
-  console.log("") 
-  console.log('#8 Пошук за наявністю друга в списку ============================================================================')                           
 
   const getUsersByFriend = (arr, name) => {
-    return arr.filter(x => x.friends.includes(name)).map(y => y.name)
-
-    // ЩО Я В ЦЬОМУ АЛЬТЕРНАТИВНОМУ ВАРІАНТІ ЗРОБИВ НЕ ТАК?????
-
-//     let newArr = []
-//     arr.forEach(element => {
-//       if(element.friends === element.friends.includes(name)){
-//         newArr.push(element ["name"])
-//         console.log(newArr)
-//         console.log(element.friends)
-//       }
-//      console.log(newArr)
-
-// ТИ НАПИСАВ "НЕ НАДО ПИСАТЬ ТАК", ЯК "ТАК"?????????
-
+    return arr.filter(user => user.friends.includes(name)).ma(user => user.name)
 
 };
 
