@@ -3,13 +3,15 @@ const numbers = []
 let total = 0;
 do{
     userInput = prompt('Введіть будь ласка число!');
+    
 
-    if(isNaN(userInput)){
+    if(Number.isNaN(Number(userInput))){
         alert('Було введено не число, спробуйте ще раз')
         continue
     }
     
     numbers.push(Number(userInput))
+    console.log(numbers)
 }while (userInput !== null);
 
 
