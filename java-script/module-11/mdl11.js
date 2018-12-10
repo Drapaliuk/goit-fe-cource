@@ -93,71 +93,79 @@ const laptops = [
   ];
 
 
-
-
-
-
-
-
-
-function getFilteredItems() {
-    const controls = {
-      size: Array.from(document.querySelectorAll('input[name="size"]:checked')),
-      color: Array.from(
-        document.querySelectorAll('input[name="color"]:checked'),
-      ).map(item => item.value),
-      release_date: Array.from(
-        document.querySelectorAll('input[name="release_date"]:checked'),
-      ).map(item => item.value),
-    };
-    return controls;
+  function unique(arr) {
+    var obj = {};
+  
+    for (var i = 0; i < arr.length; i++) {
+      var str = arr[i].name;
+      obj[str] = null;
+    }
+  
+    return Object.keys(obj);
   }
-  
 
-  
-  
-  
-  function getFilteredValues(inputs) {
-    let customSizes = arr => arr.map(elem => elem.value);
-    const filter = {
-      size: customSizes(inputs.size),
-      color: inputs.color,
-      release_date: inputs.release_date,
-    };
-    return filter;
-  }
-  
 
-  
-  
-  function displayItems() {
-    const userFilter = getFilteredValues(getFilteredItems());
-    const itemsToShow = arr =>
-      arr.filter(
-        item =>
-          userFilter.size.includes(String(item.size)) &&
-          userFilter.color.includes(item.color) &&
-          userFilter.release_date.includes(String(item.release_date)),
-      );
-      console.log(userFilter);
-      console.log(laptops);
-    const getItems = itemsToShow(laptops);
-    console.log(getItems);
-    return getItems;
+const filter = {
+  size: null,
+  color: null,
+  release_date: null,
+}
+
+
+const btn = document.querySelector('.submit')
+const form = document.querySelector('.form')
+
+form.addEventListener("submit", (event => {
+  event.preventDefault()
+}))
+
+const mainFunc = function(){
+  let commonArr = []
+  let finalArr = []
+  const uniqueName = unique(commonArr)
+
+
+
+  filter.size = Array.from(document.querySelectorAll('input[name = "size"]:checked'))
+  .map(item => Number(item.value))
+
+  filter.color = Array.from(document.querySelectorAll('input[name = "color"]:checked'))
+  .map(item => item.value)
+
+  filter.release_date = Array.from(document.querySelectorAll('input[name = "release_date"]:checked'))
+  .map(item => Number(item.value))
+
+  for(let i = 0; i < filter.size.length; i++){
+    laptops.filter(num => num.size === filter.size[i])
+    .forEach(num => commonArr.push(num))
   }
-  
-  
-  function showItems(evt) {
-    evt.preventDefault();
-    document.querySelector('.result').innerHTML = "";
-    const filteredItems = displayItems();
-    console.log(filteredItems);
-    const source = document.querySelector('#items').innerHTML.trim();
-    const template = Handlebars.compile(source);
-    const markup = filteredItems.map(el => template(el));
-    markup.map(el =>
-      document.querySelector('.result').insertAdjacentHTML('beforeend', el),
-    );
+
+  for(let i = 0; i < filter.color.length; i++){
+    filterByColor = laptops.filter(num => num.color === filter.color[i])
+    .forEach(num => commonArr.push(num))
   }
-  
-  document.querySelector(".js-form").addEventListener("submit", showItems);
+
+  for(let i = 0; i < filter.release_date.length; i++){
+    filterByRelese_date = laptops.filter(num => num.release_date === filter.release_date[i])
+    .forEach(num => commonArr.push(num))
+  }
+
+  for(let i = 0; i < uniqueName.length; i++){
+  laptops.filter(num => num.name === uniqueName[i])
+  .forEach(num => finalArr.push(num))
+}
+
+console.log(finalArr)
+
+
+
+}
+
+btn.addEventListener('click', mainFunc)
+
+
+
+
+
+
+

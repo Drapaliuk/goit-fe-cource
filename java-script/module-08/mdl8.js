@@ -33,3 +33,39 @@ const func = function(event){
 
 
 preview.addEventListener('click', func)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

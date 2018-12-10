@@ -10,7 +10,8 @@ class Hamburger {
 
     addTopping(...toppings){
       for(let i = 0; i < toppings.length; i++){
-        const revisio = this._toppings.includes(toppings[i])
+        const revisio = this._toppings
+        .includes(toppings[i])
 
         if(revisio){
           continue
@@ -21,8 +22,7 @@ class Hamburger {
 
 
     removeTopping(topping) {
-        const index = this._toppings.indexOf(topping)
-        this._toppings.splice(index, 1);
+      this._toppings = this._toppings.filter(num => num !== topping)
     }
 
     get getToppings(){
@@ -130,6 +130,8 @@ hamburger.addTopping(Hamburger.TOPPING_SAUCE);
 
 // А сколько теперь стоит?
 console.log("Price with sauce: ", hamburger.calculatePrice());
+
+console.log(hamburger.getToppings)
 
 // Проверить, большой ли гамбургер?
 console.log("Is hamburger large: ", hamburger.getSize === Hamburger.SIZE_LARGE); // -> false

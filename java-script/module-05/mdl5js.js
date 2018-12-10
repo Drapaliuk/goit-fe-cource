@@ -97,7 +97,7 @@ const users = [
 //    */
 
   const getAllNames = users => {
-   return users.reduce((acc, value) => acc.concat(value.name), [])
+    return users.map(users => users.name)
   }
   
   console.log(getAllNames(users)); 
@@ -125,7 +125,7 @@ const users = [
 
 
   const getUsersByGender = (users, gender) => {
-       return users.filter(user => user.gender === gender)
+       return users.filter(user => user.gender === gender).map(userName => userName.name)
   }
   console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
   
@@ -190,7 +190,7 @@ const users = [
   //  */
 
   const getUsersByFriend = (arr, name) => {
-    return arr.filter(user => user.friends.includes(name)).ma(user => user.name)
+    return arr.filter(user => user.friends.includes(name)).map(user => user.name)
 
 };
 

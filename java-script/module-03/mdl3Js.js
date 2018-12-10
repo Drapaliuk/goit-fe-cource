@@ -8,20 +8,19 @@ const isLoginUnique = (usersLogin, arreyLogin) => {
         return arreyLogin.includes(usersLogin);
 }
 
-const registers = function(logins){
-    const login = prompt("Введіть логін")
+const addLogin = function(logins, login){
     
     if(!isLoginValid(login)){
-        return alert("Помилка! Логін повинен бути від 4 до 16 символів")
+        return console.log("Помилка! Логін повинен бути від 4 до 16 символів")
     }
     
     if(!isLoginUnique(login, logins)){
     logins.push(login)
-    return alert("Логін успішно додано!")
+    return console.log("Логін успішно додано!")
     }else
-    return alert("Такий логін вже використовується!")
+    return console.log("Такий логін вже використовується!")
 
 }
 
 
-registers(logins)
+addLogin(logins, 'qwerty')
