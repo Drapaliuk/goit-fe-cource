@@ -23,3 +23,15 @@ button:hover{
 button:active{
     
 }
+
+.usersList{
+    display: hide
+}
+
+/* .liFrame{
+    border: 3px solid brown
+} */
+
+li{
+    display: inline-block
+}

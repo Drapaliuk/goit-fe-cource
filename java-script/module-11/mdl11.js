@@ -122,7 +122,6 @@ form.addEventListener("submit", (event => {
 const mainFunc = function(){
   let commonArr = []
   let finalArr = []
-  const uniqueName = unique(commonArr)
 
 
 
@@ -150,12 +149,14 @@ const mainFunc = function(){
     .forEach(num => commonArr.push(num))
   }
 
+  const uniqueName = unique(commonArr)
+
+
   for(let i = 0; i < uniqueName.length; i++){
   laptops.filter(num => num.name === uniqueName[i])
-  .forEach(num => finalArr.push(num))
+  .forEach(num => finalArr.push(num), )
 }
 
-console.log(finalArr)
 
 
 

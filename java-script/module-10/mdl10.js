@@ -10,24 +10,68 @@ const deleteUserBtn = document.querySelector('.deleteUser')
 const updateUserBtn = document.querySelector('.updateUser')
 const addUserBtn = document.querySelector('.addUser')
 const form = document.querySelector('.userForm')
+const wrapperForList = document.querySelector('.forList')
 
+
+const createCard = function({id, name, username, email}, wrapper){
+    console.log(id)
+    console.log(name)
+
+    const ul = document.createElement('ul')
+
+    ul.classList.add('classForRemove')
+
+    const li = document.createElement('li')
+    li.classList.add('liFrame')
+
+    const idStr = document.createElement('p')
+    idStr.textContent = `id:  ${id}`
+
+    const nameStr = document.createElement('p')
+    nameStr.textContent = `name:  ${name}`
+
+    const userNameStr = document.createElement('p')
+    userNameStr.textContent = `username:  ${username}`
+
+    const emailStr = document.createElement('p')
+    emailStr.textContent = `email:  ${email}`
+
+    li.appendChild(idStr)
+    li.appendChild(nameStr)
+    li.appendChild(userNameStr)
+    li.appendChild(emailStr)
+
+    ul.appendChild(li)
+
+    wrapper.appendChild(ul)
+}
+
+const remover = function(wrapper, mustDel) {
+    wrapper.removeChild(mustDel)
+}
 
 const getAllUsers = () => {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => {
         return response.json()
-    }).then(data => console.log(data))
+    }).then(data => data.forEach(element => {
+        createCard(element, wrapperForList)
+        
+    }))
 }
 
 
 
 
-const getUsersById = (id) => {
+const getUsersById = function(id){
+    
     if(id === '') return alert("Вкажіть id користувача")
     fetch(`https://jsonplaceholder.typicode.com/users/${id}` )
     .then(response => {
         return response.json()
-    }).then(data => console.log(data))
+    }).then(data => createCard(data, wrapperForList)
+        
+    )
 }
 
 
@@ -43,8 +87,9 @@ const addUser = (name, username) => {
       }
     })
     .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log('ERROR' + error));
+    .then(data => createCard(data, wrapperForList)
+     
+    )
 }
 
 
@@ -76,7 +121,7 @@ const updateUser = (id, name, username ) => {
             "Content-type": "application/json; charset=UTF-8"
         }
     }).then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => createCard(data, wrapperForList))
     
 }
 
@@ -99,3 +144,34 @@ form.addEventListener('click', () => {
         updateUser(inputId.value, inputName.value, inputUserName.value)
     }
 })
+
+
+
+const list = document.querySelector('.usersList')
+
+
+
+console.log(list)
+
+
+// const paragraph = document.querySelector('.p')
+// console.log(paragraph)
+// paragraph.textContent = 'Hello world!'
+
+
+
+
+
+
+const exp = document.querySelector('.exp')
+
+console.log(exp)
+
+const newe = document.createElement('p')
+newe.textContent = 'Hi'
+
+exp.appendChild(newe)
+
+
+exp.removeChild(newe)
+
